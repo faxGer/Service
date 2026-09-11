@@ -826,11 +826,11 @@
     let fallbackTimer = null;
     let explicitLoadInitiated = false;
 
-    // আইফ্রেমের সিকিউরিটি পলিসি ডাইনামিকালি সেট করা হলো (allow-top-navigation যুক্ত করা হয়েছে)
+    // আইফ্রেমের সিকিউরিটি পলিসি ডাইনামিকালি সেট করা হলো
     iframe.setAttribute('sandbox', 'allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-downloads allow-top-navigation allow-top-navigation-by-user-activation');
     iframe.setAttribute('allow', 'geolocation; microphone; camera; clipboard-write;');
 
-    // ১. টু-вей ক্রস-অরিজিন মেসেজিং ইঞ্জিন
+    // ১. টু-ওয়ে ক্রস-অরিজিন মেসেজিং ইঞ্জিন
     window.addEventListener('message', function(event) {
       if (!event.origin.startsWith('https://script.google.com')) return;
       
@@ -878,15 +878,18 @@
       }
     }, 12000);
 
-    // আইওএস (iOS) ওয়েবکیট স্কেল মিটিগেশন
+    // আইওএস (iOS) ওয়েবকিট স্কেল মিটিগেশন
     document.body.addEventListener('gesturestart', function (e) {
       e.preventDefault();
     });
 
-    // ৩. একটিভ রেজোলিউশন এক্সিকিউশন ফেজ (সরাসরি ফিক্সড URL লোড)
+    // ৩. একটিভ রেজোলিউশন এক্সিকিউশন ফেজ (সরাসরি ফিক্সড URL লোড + ইউনিক ক্যাশ-বাস্টার প্যারামিটার)
     (function() {
-      // এখানে আপনার গুগল ম্যাক্রো স্ক্রিপ্টের মূল URL-টি দেওয়া আছে (কোনো প্যারামিটার ছাড়া)
-      const targetUrl = "https://script.google.com/macros/s/AKfycbyqHkwAx_0xIMVfC1kYPsgtDnwewhIbtJAprU8da0XLSTF140ve6DUEzFWCDTmY2Y8Xbw/exec";
+      // গুগল ম্যাক্রো স্ক্রিপ্টের মূল URL
+      const baseUrl = "https://script.google.com/macros/s/AKfycbyqHkwAx_0xIMVfC1kYPsgtDnwewhIbtJAprU8da0XLSTF140ve6DUEzFWCDTmY2Y8Xbw/exec";
+      
+      // গুগল অ্যাপস স্ক্রিপ্ট আইফ্রেম ক্যাশিং সমস্যা এড়াতে ইউনিক ক্যাশ-বাস্টার যুক্ত করা হলো
+      const targetUrl = baseUrl + (baseUrl.includes('?') ? '&' : '?') + '_nc=' + Date.now();
       
       // লোড প্রসেস ট্রিগার
       explicitLoadInitiated = true;

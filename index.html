@@ -1,575 +1,898 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website# logistics: https://schema.org/LogisticsBusiness">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FaxGer Global Logistics Blog & International Shipping Hub</title>
-    <meta name="description" content="Discover professional international courier services from Bangladesh to anywhere worldwide. Use FaxGer's automated rates calculator, track shipments live, and explore premium global shipping guides.">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .brand-fax { color: #0f172a; }
-        .brand-ger { color: #ec4899; }
-        .bg-brand-primary { background-color: #0f172a; }
-        .bg-brand-accent { background-color: #f97316; }
-        .bg-brand-pink { background-color: #ec4899; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  
+ <!-- ==========================================================================
+     SECTION 1: CORE WEB VITALS & RESOURCE HINTS (Optimized)
+     Objective: Optimizes Interaction to Next Paint (INP) and Time to First Byte (TTFB).
+========================================================================= -->
+<!-- গুগল অ্যাপস স্ক্রিপ্ট এবং ইমেজের জন্য প্রি-কানেক্ট -->
+<link rel="preconnect" href="https://script.google.com" crossorigin />
+<link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin />
+ 
+<!-- গুগল ফন্টসের প্রি-কানেক্ট এবং সেফ লোডিং ইঞ্জিন -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" media="all" />
+ 
+<!-- Structural Integrity & Master Canonical Engine -->
+<!-- নোট: আপনার সাইট যদি 'www' ছাড়া ওপেন হয়, তবে নিচের লিংকগুলো থেকে 'www.' মুছে দিবেন -->
+<link rel="canonical" href="https://www.faxger.com/" />
+<link rel="alternate" href="https://www.faxger.com/" hreflang="x-default" />
+<link rel="alternate" href="https://www.faxger.com/" hreflang="en" /> 
+<!-- (আপনার সাইট শুধু বাংলাদেশের ইংরেজি ইউজারদের জন্য হলে উপরের 'en' পরিবর্তন করে 'en-bd' দিতে পারেন) -->
+  
+<!-- ==========================================================================
+    SECTION 2: META TAGS ARCHITECTURE & SERP OPTIMIZATION (Optimized)
+========================================================================== -->
+<title>FaxGer Global Logistics | International Shipping & Courier</title>
+<meta name="description" content="Calculate real-time international shipping rates from Bangladesh. Secure courier services to USA, UK, Canada & Europe via DHL, FedEx, UPS & Aramex instantly.">
+<meta name="author" content="FaxGer IT Farm">
+<meta name="copyright" content="FaxGer Global Logistics">
+<meta name="rating" content="General">
+<meta name="distribution" content="Global">
+<meta name="coverage" content="Worldwide">
+<meta name="theme-color" content="#000c1d">
+
+  <!-- ==========================================================================
+    SECTION 3: BOT CONTROL, INDEXING & ADVANCED AI SEARCH ENGINE OPTIMIZATION (SGE Aligned)
+    Objective: Signals LLMs and standard bots to scrape data without breaking Iframe context.
+  ========================================================================== -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, imageindex:yes">
+  <meta name="bingbot" content="index, follow">
+  <meta name="slurp" content="index, follow">
+  
+  <!-- AI Crawler Directives (ChatGPT, Perplexity, AppleBot & Google-Extended Authorization) -->
+  <meta name="ai-crawler-optimization" content="clippable, aggregatable, clear-context, snippet-heavy">
+  <meta name="generative-ai" content="index, follow">
+
+ <!-- ==========================================================================
+      SECTION 4: GEO-TARGETING & REGIONAL LOGISTICS HYPER-LOCAL SEO (Moz Local Matrix)
+      Objective: Flags localized authority to rank higher in regional and map queries.
+  ========================================================================== -->
+  <!-- Dhaka Hub (Primary Corporate & Airport Operations) -->
+  <meta name="geo.region" content="BD-13">
+  <meta name="geo.placename" content="Dhaka, Bangladesh">
+  <meta name="geo.position" content="23.8103;90.4125">
+  <meta name="ICBM" content="23.8103, 90.4125">
+
+  <!-- Chittagong Port Hub (Primary Ocean Sea Freight Operations) -->
+  <meta name="geo.region" content="BD-10">
+  <meta name="geo.placename" content="Chittagong, Bangladesh">
+  <meta name="geo.position" content="22.3569;91.7832">
+  <meta name="ICBM" content="22.3569, 91.7832">
+
+  <!-- Gazipur Industrial Hub (RMG Garment Manufacturing Sector) -->
+  <meta name="geo.region" content="BD-18">
+  <meta name="geo.placename" content="Gazipur, Bangladesh">
+  <meta name="geo.position" content="23.9999;90.4203">
+  <meta name="ICBM" content="23.9999, 90.4203">
+
+  <!-- Narayanganj Textile Hub (Knitwear & Export Production Sector) -->
+  <meta name="geo.region" content="BD-40">
+  <meta name="geo.placename" content="Narayanganj, Bangladesh">
+  <meta name="geo.position" content="23.6238;90.5000">
+  <meta name="ICBM" content="23.6238, 90.5000">
+
+  <!-- Savar EPZ Hub (Export Processing Zone Logistics) -->
+  <meta name="geo.region" content="BD-13">
+  <meta name="geo.placename" content="Savar, Bangladesh">
+  <meta name="geo.position" content="23.8583;90.2667">
+  <meta name="ICBM" content="23.8583, 90.2667">
+
+  <!-- Mongla Port Hub (Alternative Maritime Gateway) -->
+  <meta name="geo.region" content="BD-04">
+  <meta name="geo.placename" content="Mongla, Bangladesh">
+  <meta name="geo.position" content="22.4842;89.6056">
+  <meta name="ICBM" content="22.4842, 89.6056">
+
+  <!-- Comilla Highway Cargo Hub (Chittagong-Dhaka Supply Chain Corridor) -->
+  <meta name="geo.region" content="BD-08">
+  <meta name="geo.placename" content="Comilla, Bangladesh">
+  <meta name="geo.position" content="23.4607;91.1809">
+  <meta name="ICBM" content="23.4607, 91.1809">
+
+  <!-- Sylhet Regional Hub (Expatriate Delivery & Tea Export Logistics) -->
+  <meta name="geo.region" content="BD-60">
+  <meta name="geo.placename" content="Sylhet, Bangladesh">
+  <meta name="geo.position" content="24.8949;91.8687">
+  <meta name="ICBM" content="24.8949, 91.8687">
+
+  <!-- Khulna Industrial Gateway (Industrial Hub & Inland River Port Networks) -->
+  <meta name="geo.region" content="BD-27">
+  <meta name="geo.placename" content="Khulna, Bangladesh">
+  <meta name="geo.position" content="22.8456;89.5403">
+  <meta name="ICBM" content="22.8456, 89.5403">
+
+  <!-- Rajshahi Northern Logistics Point (Agricultural Trade & Regional Distribution) -->
+  <meta name="geo.region" content="BD-54">
+  <meta name="geo.placename" content="Rajshahi, Bangladesh">
+  <meta name="geo.position" content="24.3636;88.6241">
+  <meta name="ICBM" content="24.3636, 88.6241">
+
+  <!-- Bogra Commercial Distribution Node (Northern Highway Supply Chain Hub) -->
+  <meta name="geo.region" content="BD-05">
+  <meta name="geo.placename" content="Bogra, Bangladesh">
+  <meta name="geo.position" content="24.8481;89.3730">
+  <meta name="ICBM" content="24.8481, 89.3730">
+
+  <!-- Jessore Border Logistics Hub (Benapole Land Port Trade Corridor) -->
+  <meta name="geo.region" content="BD-20">
+  <meta name="geo.placename" content="Jessore, Bangladesh">
+  <meta name="geo.position" content="23.1664;89.2081">
+  <meta name="ICBM" content="23.1664, 89.2081">
+
+  <!-- Mymensingh Industrial Footprint (Agritech & Local Manufacturing Sector) -->
+  <meta name="geo.region" content="BD-39">
+  <meta name="geo.placename" content="Mymensingh, Bangladesh">
+  <meta name="geo.position" content="24.7471;90.4203">
+  <meta name="ICBM" content="24.7471, 90.4203">
+
+  <!-- Barisal South-Western Matrix (Riverine Transport & Inland Cargo Shipping) -->
+  <meta name="geo.region" content="BD-02">
+  <meta name="geo.placename" content="Barisal, Bangladesh">
+  <meta name="geo.position" content="22.7010;90.3535">
+  <meta name="ICBM" content="22.7010, 90.3535">
+
+  <!-- Feni Transit Corridor (Dhaka-Chittagong High-Volume Route Anchor) -->
+  <meta name="geo.region" content="BD-16">
+  <meta name="geo.placename" content="Feni, Bangladesh">
+  <meta name="geo.position" content="23.0159;91.3976">
+  <meta name="ICBM" content="23.0159, 91.3976">
+
+  <!-- Cox's Bazar Maritime Terminal (Deep Sea Trade & Tourism Logistics) -->
+  <meta name="geo.region" content="BD-11">
+  <meta name="geo.placename" content="Cox's Bazar, Bangladesh">
+  <meta name="geo.position" content="21.4272;92.0058">
+  <meta name="ICBM" content="21.4272, 92.0058">
+
+  <!-- Dinajpur Cross-Border Port Access (Hili Land Port Trade Junction) -->
+  <meta name="geo.region" content="BD-14">
+  <meta name="geo.placename" content="Dinajpur, Bangladesh">
+  <meta name="geo.position" content="25.6217;88.6443">
+  <meta name="ICBM" content="25.6217, 88.6443">
+
+  <!-- ==========================================================================
+    SECTION 5: HIGH-ROI SEMANTIC, LSI & INTENT KEYWORDS ENGINE (Semrush Intent Analytics)
+    Objective: Captures high-intent B2B and B2C commercial traffic patterns.
+  ========================================================================== -->
+  <meta name="keywords" content="FaxGer, FaxGer Global Logistics, Best courier service in Bangladesh, Fastest courier service in BD, Low cost courier service, International shipping solutions, Online shipping calculator Bangladesh, Weight-based courier rates in Bangladesh, Express delivery international Bangladesh, Cheap international shipping from BD, Global logistics solutions, Best international courier Dhaka, Door to door shipping, Cargo service in Bangladesh, DHL Rates Bangladesh, FedEx Rates BD, UPS rates Dhaka, Aramex Bangladesh price list, Courier service Dhaka, Courier service in Uttara, Courier service near me, Send parcel from Bangladesh to USA UK Canada, Courier to UK from Bangladesh, Shipping cost to Canada from BD, Cheapest way to send parcel to Europe, Bangladesh to USA shipping charges, international document delivery Dhaka, air freight cargo Bangladesh, global courier booking online, B2B export shipping Dhaka, freight forwarding services Bangladesh, reliable parcel delivery Asia Pacific, international air freight rates Dhaka, commercial air cargo Bangladesh, global package tracking portal, hazardous goods shipping Dhaka, e-commerce cross-border logistics BD, breakbulk cargo agents Bangladesh, supply chain management software Dhaka, supply chain visibility, international trade compliance, customs clearance Dhaka, customs brokerage Bangladesh, container load shipping BD, third party logistics BD, ocean freight forwarding Dhaka, cross dock logistics, LCL shipping Bangladesh, FCL container tracking, bonded warehouse Dhaka, logistics infrastructure engine, dynamic routing algorithms, global terminal operations, cross-dock hub execution, intermodal transport systems, multimodal shipping lanes, high-volume parcel injection, e-commerce fulfillment engine, volumetric weight optimizer, real-time customs brokerage, supply chain diagnostic tools, Amazon FBA warehouse shipping BD, Shopify dropshipping fulfillment Bangladesh, Alibaba B2B export shipping, eBay global shipping program BD, Etsy product shipping from Bangladesh, Walmart marketplace logistics hub, WooCommerce shipping API integration, Magento cross-border fulfillment, Daraz seller logistics tracking, Bikroy delivery service corporate, AliExpress cross-border dropshipping BD, Printify print on demand Bangladesh, Printful shipping agent Dhaka, automated dropshipping fulfillment service, multi-vendor warehouse consolidation BD, DPEX Worldwide Bangladesh, TNT Express courier Dhaka, Skynet Worldwide Express BD, Purolator Canada shipping Dhaka, Asendia e-commerce shipping, DTDC Express Bangladesh charges, Bombino Express air cargo, First Flight couriers Dhaka, OCM Globe international cargo, Gati Express cargo BD, Sundarban Courier Service international, SA Poribohon booking Dhaka, Pathao Courier for business, REDX Delivery enterprise shipping, Steadfast Courier API integration, Lalamove Bangladesh truck rental, Paperfly e-commerce logistics, Korotoa Courier service freight, eCourier international parcel delivery, Continental Courier Dhaka office, Fox Delivery BD, Sonar Courier service, Sky King courier Bangladesh, Shadhin international courier, Janani Courier Service corporate, Karatoa courier booking, Maersk Line Bangladesh container shipping, DSV air and sea freight forwarding, Kuehne Nagel logistics Bangladesh, DHL Global Forwarding Dhaka, bill of entry optimization, letter of credit LC documentation support, reverse logistics returns management, dangerous goods DG cargo processing, lithium-ion battery shipping certificate, bonded warehousing fulfillment Dhaka, air cargo consolidation services BD, international shipping agent Mirpur, corporate logistics hub Gulshan, export cargo booking Banani, commercial freight forwarder Motijheel, garment shipping agent Gazipur, knitwear export courier Narayanganj, EPZ zone logistics Bangladesh, Chittagong Port freight forwarding agent, courier booking center Dhanmondi, B2B cargo shipping Comilla, Tejgaon Industrial Area freight booking, Savar EPZ cargo forwarder, CJ Dropshipping agent Bangladesh, Temu wholesale logistics BD, Shein supplier shipping Dhaka, TikTok Shop fulfillment engine, WooCommerce automation API, BigCommerce multi channel logistics, Squarespace shipping calculator, cross border e commerce solutions, international dropshipping courier, third party fulfillment 3PL Dhaka, ocean freight forwarder Chittagong, air cargo consolidation Dhaka, customs clearing agent Benapole, international parcel delivery app, domestic tech courier integration, garment accessories logistics, buyingshouse sample shipping, sample courier service Dhaka, bulk commercial cargo forwarding, cheapest international courier service, express document courier BD, tracking API integration, last mile delivery tracking, air freight tracking Bangladesh, sea cargo booking agent, LCL consolidation hub, FCL shipping rates Chittagong, port clearing services Bangladesh, automated shipping plugin, commercial goods delivery, international box shipping BD, air courier service Dhaka, global supply chain network, ecommerce parcel export, e commerce shipping agent, parcel delivery tracker, courier charge calculator, international shipping agent Dhanmondi, corporate courier service Gulshan, export courier Banani, commercial cargo Motijheel, industrial shipping Gazipur, clothing export logistics Narayanganj, EPZ freight agent, maritime forwarding agent, business courier service BD, cross border logistics engine, multi carrier API integration">
+ <!-- ==========================================================================
+      SECTION 6: CO-BRANDING, SECURITY & ENTERPRISE AUDIT DISCOVERY (Screaming Frog Proofing)
+      Objective: Simplifies diagnostic discovery during automated SEO structural checks.
+  ========================================================================== -->
+  <!-- সিকিউরিটির জন্য সুনির্দিষ্ট ভার্সন নাম্বার (v3.5) লুকিয়ে রাখা হলো -->
+  <meta name="generator" content="FaxGer Core Engine">
+  <meta name="application-name" content="FaxGer Logistics Platform">
+  
+  <!-- আধুনিক মোবাইল ব্রাউজার থিমিং সাপোর্ট (ব্রাউজার বার আপনার ব্র্যান্ড কালার হবে) -->
+  <meta name="theme-color" content="#007bff"> <!-- এখানে আপনার ব্র্যান্ডের প্রাইমারী কালার কোড দিন -->
+  <meta name="apple-mobile-web-app-title" content="FaxGer">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- আইফোনের নচ এরিয়াতে ডিজাইন কেটে যাওয়া রোধ করতে 'black' মোড করা হলো -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- ==========================================================================
+      SECTION 7: OPEN GRAPH / FACEBOOK SOCIAL GRAPH GRAPHICS (Meta Sharing Debugger Approved)
+      Objective: Drives massive visual engagement and high Click-Through-Rates (CTR) on social platforms.
+  ========================================================================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.faxger.com/">
+  <meta property="og:title" content="FaxGer Global Logistics - Advanced Shipping Portal & C&F Services">
+  
+  <!-- এসইও ও মেটা অ্যালগরিদম শক্তিশালী করতে ডেসক্রিপশনে হাই-ভ্যালু কিওয়ার্ড যুক্ত করা হলো -->
+  <meta property="og:description" content="Get instant shipping quotes with FaxGer's automated international shipping calculator. Compare rates for DHL, FedEx, UPS & Aramex. Premier B2B cargo, RMG export, and C&F agent solutions from Dhaka & Chittagong, Bangladesh to the USA, UK, and worldwide.">
+  
+  <!-- ফেসবুকের প্রথম শেয়ারেই যাতে ছবি ১০০% শো করে, তার জন্য ইমেজ মেটা অপ্টিমাইজেশন -->
+  <meta property="og:image" content="https://lh3.googleusercontent.com/d/13QoaBni9mY0tTYPkCodu4KSqe0syFkrZ">
+  <meta property="og:image:secure_url" content="https://lh3.googleusercontent.com/d/13QoaBni9mY0tTYPkCodu4KSqe0syFkrZ">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="FaxGer Global Logistics Advanced Shipping Portal Dashboard for Amazon, Shopify & B2B Exporters">
+  <meta property="og:site_name" content="FaxGer">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ==========================================================================
+      SECTION 8: X / TWITTER CARDS MARKETING PATTERNS (X Card Validator Aligned)
+      Objective: Ensures proper image container scaling across X feed layouts.
+  ========================================================================== -->
+  <!-- 'property' পরিবর্তন করে স্ট্যান্ডার্ড 'name' অ্যাট্রিবিউট করা হলো -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" content="faxger.com">
+  <meta name="twitter:url" content="https://www.faxger.com/">
+  <meta name="twitter:title" content="FaxGer Global Logistics - Advanced Shipping Portal & C&F Agent">
+  
+  <!-- এক্স সার্চ অ্যালগরিদমের জন্য হাই-ডেন্সিটি লজিস্টিকস কিওয়ার্ড পুশ করা হলো -->
+  <meta name="twitter:description" content="Calculate real-time cargo rates with FaxGer's international shipping calculator. Compare DHL, FedEx, UPS & Aramex charges. Secure the cheapest B2B RMG export & container freight forwarding from Dhaka, Bangladesh.">
+  <meta name="twitter:image" content="https://lh3.googleusercontent.com/d/13QoaBni9mY0tTYPkCodu4KSqe0syFkrZ">
+
+  <!-- Universal Favicons & App Context Integration Profiles (আইকন সাইজ ও ক্যাশিং অপ্টিমাইজড) -->
+  <!-- ব্রাউজার ট্যাবের জন্য স্ট্যান্ডার্ড ফেভিকন (ico বা ছোট png ব্যবহার করা উচিত) -->
+  <link rel="icon" href="https://www.faxger.com/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://www.faxger.com/assets/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="https://www.faxger.com/assets/favicon-16x16.png" type="image/png" sizes="16x16">
+  
+  <!-- আইফোনের হোম স্ক্রিনের জন্য পারফেক্ট ১৮০x১৮০ সাইজের আইকন রুলস -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.faxger.com/assets/apple-touch-icon.png">
+
+  <!-- ==========================================================================
+    SECTION 9: MULTI-SCHEMA JSON-LD GRAPH STRUCTURE (Google Rich Snippets Dominance)
+    Objective: Merges Organization, Website, Services, and Reviews to display Star Ratings in SERPs.
+  ========================================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LogisticsBusiness",
+        "@id": "https://www.faxger.com/#organization",
+        "name": "FaxGer Global Logistics",
+        "url": "https://www.faxger.com/",
+        "logo": "https://lh3.googleusercontent.com/d/13QoaBni9mY0tTYPkCodu4KSqe0syFkrZ",
+        "image": "https://lh3.googleusercontent.com/d/13QoaBni9mY0tTYPkCodu4KSqe0syFkrZ",
+        "description": "Calculate international shipping rates, track parcels, and manage logistics with FaxGer. Reliable solutions for global shipping from Bangladesh.",
+        "telephone": "+8801234567890", 
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Dhaka",
+          "addressRegion": "Dhaka Division",
+          "addressCountry": "BD"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "23.8103",
+          "longitude": "90.4125"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://www.faxger.com/#product",
+        "name": "International Courier & Rate Engine Service",
+        "description": "Instant shipping calculation and booking engine connecting Bangladesh exporters to DHL, FedEx, UPS, and Aramex channels.",
+        "brand": {
+          "@type": "Brand",
+          "name": "FaxGer"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "1250"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.faxger.com/#website",
+        "url": "https://www.faxger.com/",
+        "name": "FaxGer",
+        "publisher": {
+          "@id": "https://www.faxger.com/#organization"
+        },
+        "potentialAction": {
+          "@type": "QuoteAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.faxger.com/?weight={weight}"
+          },
+          "result": {
+            "@type": "PriceSpecification",
+            "name": "Instant Shipping Rate Engine"
+          }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #ff007f;
+      --accent: #001d47;
+      --bg: #000c1d;
+      --card-bg: #001533;
+      --text: #ffffff;
+      --text-muted: #8fa0b5;
+      --loader-bg: #000c1d;
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+    body, html {
+      margin: 0; padding: 0;
+      width: 100%; height: 100%;
+      background-color: var(--bg);
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      overflow-x: hidden;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+    }
+
+    /* Split-screen viewport protection */
+    .app-viewport {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #main-app {
+      flex: 1; width: 100%; height: 100%;
+      border: none; opacity: 0;
+      transition: var(--transition);
+      z-index: 2;
+    }
+
+    #main-app.loaded { opacity: 1; }
+
+    .loader-overlay {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      background: var(--loader-bg);
+      z-index: 100; transition: var(--transition);
+    }
+
+    .spinner-box { position: relative; width: 65px; height: 65px; }
+
+    .spinner {
+      width: 100%; height: 100%;
+      border: 3px solid rgba(255, 0, 127, 0.1);
+      border-top: 3px solid var(--primary);
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      box-shadow: 0 0 15px rgba(255, 0, 127, 0.5);
+      will-change: transform;
+    }
+
+    .loading-status {
+      margin-top: 25px; font-size: 0.85rem;
+      font-weight: 700; color: var(--primary);
+      letter-spacing: 2px; text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(255, 0, 127, 0.4);
+    }
+
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    .hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+
+    .loader-overlay::before {
+      content: ''; position: absolute;
+      width: 300px; height: 300px;
+      background: var(--primary);
+      filter: blur(100px); opacity: 0.12;
+      animation: pulse 2.5s infinite ease-in-out;
+      will-change: transform, opacity;
+    }
+
+    @keyframes pulse { 0%, 100% { opacity: 0.08; transform: scale(1); } 50% { opacity: 0.15; transform: scale(1.2); } }
+
+    /* ==========================================================================
+       ENTERPRISE SEO SEMANTIC CONTENT GRID (Visible, Crawlable, and UX Native)
+       ========================================================================== */
+    .seo-rich-footer {
+      background: linear-gradient(180deg, var(--bg) 0%, #00060f 100%);
+      padding: 80px 24px;
+      border-top: 1px solid rgba(255, 0, 127, 0.15);
+      position: relative;
+      z-index: 10;
+    }
+
+    .seo-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .seo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .seo-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 28px;
+      transition: var(--transition);
+    }
+
+    .seo-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 0, 127, 0.3);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Core Heading Styles designed for semantic weights */
+    h1.seo-main-title {
+      font-size: 2.5rem; font-weight: 800; line-height: 1.2;
+      background: linear-gradient(135deg, #ffffff 0%, var(--text-muted) 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      margin-bottom: 16px; text-transform: capitalize;
+    }
+
+    h2.seo-section-title {
+      font-size: 1.8rem; font-weight: 700; color: #ffffff;
+      margin-top: 40px; margin-bottom: 20px;
+      border-left: 4px solid var(--primary); padding-left: 15px;
+    }
+
+    h3.seo-pillar-title {
+      font-size: 1.35rem; font-weight: 600; color: var(--primary);
+      margin-bottom: 14px;
+    }
+
+    h4.seo-feature-title {
+      font-size: 1.15rem; font-weight: 600; color: #ffffff;
+      margin-top: 20px; margin-bottom: 10px;
+    }
+
+    h5.seo-compliance-title {
+      font-size: 1rem; font-weight: 600; color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 1px; margin-top: 15px;
+    }
+
+    h6.seo-footprint-title {
+      font-size: 0.9rem; font-weight: 700; color: #ffffff;
+      margin-top: 25px; margin-bottom: 5px;
+    }
+
+    .seo-rich-footer p {
+      font-size: 0.95rem; line-height: 1.6; color: var(--text-muted);
+      margin-bottom: 16px; white-space: normal;
+    }
+
+    .seo-tag-cloud {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px;
+    }
+
+    .seo-tag {
+      background: rgba(255, 0, 127, 0.08);
+      border: 1px solid rgba(255, 0, 127, 0.2);
+      color: #ff52af; padding: 6px 12px;
+      border-radius: 20px; font-size: 0.8rem; font-weight: 600;
+    }
+
+    /* Technical Diagnostic Tools Table */
+    .tool-matrix-table {
+      width: 100%; border-collapse: collapse; margin-top: 25px;
+      background: #000914; border-radius: 8px; overflow: hidden;
+    }
+
+    .tool-matrix-table th, .tool-matrix-table td {
+      padding: 14px 18px; text-align: left; font-size: 0.9rem;
+    }
+
+    .tool-matrix-table th {
+      background: rgba(255, 0, 127, 0.1); color: #ffffff; font-weight: 700;
+    }
+
+    .tool-matrix-table td {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05); color: var(--text-muted);
+    }
+
+    .tool-matrix-table tr:last-child td { border-bottom: none; }
+    
+    .tool-note {
+      font-size: 0.8rem; font-style: italic; color: #ffbc00; background: rgba(255, 188, 0, 0.05);
+      padding: 8px 12px; border-left: 3px solid #ffbc00; margin-top: 5px; border-radius: 0 4px 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      h1.seo-main-title { font-size: 2rem; }
+      h2.seo-section-title { font-size: 1.5rem; }
+      .seo-rich-footer { padding: 40px 16px; }
+    }
+  </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans">
+<body>
 
-    <!-- TOP NAVIGATION BAR -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="https://www.faxger.com" class="text-3xl font-extrabold tracking-tight">
-                        <span class="brand-fax">Fax</span><span class="brand-ger">Ger</span>
-                    </a>
-                </div>
-                <div class="hidden md:flex space-x-8 font-semibold text-slate-600">
-                    <a href="https://www.faxger.com" class="hover:text-pink-500 transition">Main Website</a>
-                    <a href="https://rate.faxger.com" class="hover:text-pink-500 transition">Shipping Rates</a>
-                    <a href="https://track.faxger.com" class="hover:text-pink-500 transition">Track Shipment</a>
-                    <a href="https://label.faxger.com" class="hover:text-pink-500 transition">Label Creator</a>
-                </div>
-                <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-slate-700 focus:outline-none text-2xl">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-4 py-4 space-y-3 shadow-inner">
-            <a href="https://www.faxger.com" class="block font-medium text-slate-700 hover:text-pink-500">Main Website</a>
-            <a href="https://rate.faxger.com" class="block font-medium text-slate-700 hover:text-pink-500">Shipping Rates</a>
-            <a href="https://track.faxger.com" class="block font-medium text-slate-700 hover:text-pink-500">Track Shipment</a>
-            <a href="https://label.faxger.com" class="block font-medium text-slate-700 hover:text-pink-500">Label Creator</a>
-        </div>
-    </nav>
+  <!-- App Main Viewport Block -->
+  <div class="app-viewport">
+    <div class="loader-overlay" id="loader">
+      <div class="spinner-box">
+        <div class="spinner"></div>
+      </div>
+      <div class="loading-status" id="status-text">FaxGer Initializing...</div>
+    </div>
 
-    <!-- HERO SECTION -->
-    <header class="bg-brand-primary text-white py-16 px-4 relative overflow-hidden">
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-            <span class="bg-pink-600 text-xs uppercase px-3 py-1 rounded-full font-bold tracking-wider mb-4 inline-block">Global Cargo & Express Parcel Network</span>
-            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">Where do you want to ship today?</h1>
-            <p class="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl mx-auto">Instant global coverage from Bangladesh. Check cross-border custom rates, create commercial invoices, and pass international security screenings flawlessly.</p>
-            
-            <!-- Live Search Interface -->
-            <div class="bg-white p-2 rounded-xl shadow-2xl max-w-2xl mx-auto flex flex-col sm:flex-row items-center gap-2">
-                <div class="flex items-center w-full px-3 text-slate-400">
-                    <i class="fas fa-globe-americas text-xl text-pink-500 mr-2"></i>
-                    <input type="text" id="geo-search" placeholder="Enter destination country (e.g., USA, Germany, Japan)..." class="w-full py-3 text-slate-800 font-medium focus:outline-none">
-                </div>
-                <button onclick="filterDestinations()" class="w-full sm:w-auto bg-pink-500 hover:bg-pink-600 text-white font-bold px-8 py-3 rounded-lg transition shadow-md whitespace-nowrap">
-                    Search Route
-                </button>
-            </div>
-        </div>
-        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ec4899_1px,transparent_1px)] [background-size:16px_16px]"></div>
-    </header>
+    <!-- Smart Rendering Google Apps Script Frame Container -->
+    <iframe
+      id="main-app"
+      title="FaxGer Global Logistics Dashboard"
+      allow="geolocation; camera; clipboard-write"
+      loading="eager">
+    </iframe>
+  </div>
 
-    <!-- INTERACTIVE LEAD GENERATION WIDGET -->
-    <section class="max-w-4xl mx-auto -mt-8 px-4 relative z-20">
-        <div class="bg-white rounded-2xl p-6 md:p-8 shadow-xl border border-slate-100 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-            <div class="md:col-span-2">
-                <h3 class="text-xl font-bold text-slate-900 mb-2">Want to see live costs for your specific parcel dimension?</h3>
-                <p class="text-sm text-slate-600">Calculate real-time fuel surcharges, clearance fees, and express air transit matrix variations instantly.</p>
-            </div>
-            <div class="text-right">
-                <a href="https://rate.faxger.com" target="_blank" class="inline-block w-full text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-xl shadow-md transition transform hover:-translate-y-0.5">
-                    <i class="fas fa-calculator mr-2"></i>Open Rate Calculator
-                </a>
-            </div>
-        </div>
-    </section>
+  <!-- ==========================================================================
+    SECTION 10: ADVANCED OMNICHANNEL SEO LAYOUT & METRIC MONITORING TOOL MATRIX
+    Targeting: Deep Crawl Indexability, LLM Retrieval Context, and Semantic Node Maps.
+    ========================================================================== -->
+  <footer class="seo-rich-footer">
+    <div class="seo-container">
+      
+  <!-- H1 Core Context -->
+<h1 class="seo-main-title">FaxGer Global Logistics: Best International Courier Service & Freight Forwarding Company in Bangladesh</h1>
 
-    <!-- SEO STRATEGY HUB & APPLICATION INTERFACE -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<p>Welcome to FaxGer Global Logistics, the premier cross-border supply chain engine and top-tier international freight forwarder based out of Dhaka, Bangladesh. As a leading international shipping and logistics company, we offer the most reliable and affordable international courier service in Bangladesh—seamlessly integrating with top global networks like DHL, FedEx, UPS, Aramex, and DPEX Worldwide. We provide instant real-time cargo rates, comprehensive air freight, and ocean sea freight forwarding architectures, alongside secure door-to-door global parcel delivery, international document shipping, and export customs clearance services to the USA, UK, Europe, UAE, Canada, Australia, and worldwide.</p> 
+
+<p>Specially engineered for high-intent B2B exporters, RMG garment manufacturers, textile suppliers, and enterprise partners, we specialize in cross-border e-commerce fulfillment, 3PL warehousing, and supply chain logistics for major global and local marketplaces, including Amazon FBA, Alibaba, Shopify, eBay, Etsy, Walmart, Daraz, and Bikroy. Whether you need an express courier service in Dhaka, sample delivery for international buyers, or large-scale commercial bulk freight shipping, FaxGer ensures your commercial goods hit global markets safely, quickly, and cost-effectively.</p>
+
+
+      
+      <!-- H2 Structural Segment -->
+      <h2 class="seo-section-title">Automated Multi-Carrier Aggregator & Global Air Cargo Systems</h2>
+<p>FaxGer effectively removes the complexity of cross-border trade matching by deploying structural cargo rate matrix integrations with tier-1 international parcel carriers. Avoid manual shipping lookup charts and effortlessly access verified logistics pipelines. Our automated system acts as an instant international shipping calculator—allowing B2B exporters, RMG garment factories, buying houses, and e-commerce brands in Dhaka to seamlessly compare international courier charges and secure the cheapest shipping rates from Bangladesh to the USA, UK, Europe, and worldwide.</p>
+
+<p>By pulling real-time APIs directly from the world's leading express delivery and supply chain networks, FaxGer delivers instantaneous rates for premium carriers including DHL Express, FedEx, UPS, Aramex, and DPEX Worldwide. Whether you are arranging an urgent international document shipping pickup, dispatching textile apparel samples, or calculating ocean sea freight or air freight forwarding costs from the Dhaka and Chittagong ports, our unified dashboard functions as a complete 3PL logistics control tower. Skip the friction of contacting individual shipping agents; find the lowest cargo rates, book secure door-to-door parcel delivery, and manage export customs clearance services all under one smart platform.</p>
+
+<p>As a comprehensive corporate logistics company in Bangladesh, we optimize end-to-end supply chain distribution pipelines for enterprise brands requiring reliable parcel delivery services. From lightweight parcel shipping to heavy freight cargo movement, our software infrastructure coordinates with top local and global logistics networks—including Sundarban Courier Service, SA Poribohon, Pathao Courier, REDX Delivery, Steadfast Courier, Lalamove Bangladesh, Paperfly, Korotoa Courier, Fox Delivery, Continental Courier, Sonar Courier, Sky King, Shadhin International, Maersk, and DSV—ensuring seamless multimodal transport. Eliminate booking blind spots with unified tracking, dedicated customs brokerage compliance, and competitive international courier rates tailored for high-volume commercial shipping.</p>
+
+<p>Engineered for the fast-paced demands of modern global trade, our platform functions as an all-in-one air cargo and container shipping hub, offering end-to-end supply chain management, contract logistics, and project cargo handling. We streamline complex multi-channel operations by providing robust third-party logistics (3PL) infrastructure, cold chain logistics, and specialized customs clearance services. By bridging the gap between local domestic couriers and massive multi-modal transport networks, FaxGer empowers businesses to seamlessly execute both high-volume commercial bulk freight shipping and sensitive express parcel delivery from Bangladesh to any global destination.</p>
+
+<p>By operating as an integrated customs clearing and forwarding agent (C&amp;F agent in Bangladesh), we remove the standard administrative bottlenecks from cross-border trade. Our system is fully aligned with leading international cargo networks—including Skynet Worldwide Express, Bombino Express, First Flight Couriers, TNT Express, Asendia, Purolator, and DTDC Express—to offer comprehensive global coverage. Whether your business requires bonded warehousing, supply chain consulting, air freight consolidation, letter of credit (L/C) formatting, reverse logistics, or less-than-container load (LCL) and full container load (FCL) shipping, FaxGer translates complex global freight forwarding into an effortless, on-demand transaction.</p>
+
+<p>Specially optimized for high-volume corporate senders and cross-border e-commerce sellers, our system provides flawless multi-channel integration. We support seamless API generation and fulfillment pipelines for global and regional online marketplaces, including Amazon FBA, Alibaba, Shopify, eBay, Etsy, Walmart, Magento, WooCommerce, Daraz, and Bikroy. From urgent packet delivery to heavy industrial ocean freight, FaxGer serves as the ultimate multi-modal gateway for businesses looking to export products globally with complete cost transparency.</p>
+
+      <div class="seo-grid">
         
-        <!-- Navigation Tabs for SEO Strategy Hub -->
-        <div class="flex flex-wrap gap-2 border-b border-slate-200 pb-4 mb-12">
-            <button onclick="switchTab('geo-content')" id="tab-geo-content" class="tab-btn px-5 py-2.5 font-bold rounded-lg bg-pink-500 text-white shadow-sm transition">GEO-Targeted Content Engines</button>
-            <button onclick="switchTab('seo-console')" id="tab-seo-console" class="tab-btn px-5 py-2.5 font-bold rounded-lg bg-slate-200 text-slate-700 hover:bg-slate-300 transition">Integrated SEO Console</button>
-            <button onclick="switchTab('writing-blueprint')" id="tab-writing-blueprint" class="tab-btn px-5 py-2.5 font-bold rounded-lg bg-slate-200 text-slate-700 hover:bg-slate-300 transition">Cornerstone Content Blueprint</button>
+      <!-- Column 1: H3 & H4 Architecture -->
+<div class="seo-card">
+  <h3 class="seo-pillar-title">Express Logistics Pipelines to USA, UK, Canada & Europe</h3>
+  <p>We streamline international air cargo operations from Bangladesh hubs directly into major destination systems, securing faster customs processing windows for commercial entities. By integrating with premium global networks like DHL Express, FedEx, UPS, Aramex, and DPEX Worldwide, we offer seamless multi-modal shipping options and express delivery.</p>
+  
+  <h4 class="seo-feature-title">Bangladesh to USA Courier Routes & Commercial Cargo Freight</h4>
+  <p>Tailored export workflows for ready-made garment (RMG) manufacturers, textile suppliers, buying houses, and e-commerce brands utilizing integrated customs tracking pipelines. Send anything from clothing samples to bulk palletized air freight securely to Amazon FBA warehouses, eBay fulfillment hubs, Alibaba networks, and global buyers.</p>
+
+  <h4 class="seo-feature-title">UK Cargo Shipping & Express Parcel Access Points</h4>
+  <p>Direct air freight forwarding schedules running daily from Hazrat Shahjalal International Airport (DAC / HSIA) in Dhaka to major British distribution complexes, ensuring the cheapest international courier charges for urgent document delivery, Shopify store parcels, and commercial goods.</p>
+</div>
+
+<!-- Column 2: H4 & H5 Architecture -->
+<div class="seo-card">
+  <h3 class="seo-pillar-title">Computational Freight Rate Engines & Variable Volumetrics</h3>
+  <p>Our backend relies on precise physical and dimensional volumetric weight parameters to eliminate pricing guesswork, acting as an automated international shipping calculator that delivers instant, live cargo rates for worldwide parcel delivery services. This advanced engine allows cross-border B2B exporters, RMG garment factories, and buying houses to instantly compare international courier charges and secure the cheapest shipping rates from Bangladesh to the USA, UK, Canada, Europe, Australia, and global destinations.</p>
+
+  <p>By pulling real-time APIs from top-tier express networks—including DHL Express, FedEx, UPS, Aramex, DPEX Worldwide, TNT Express, Asendia, Purolator, and Skynet Worldwide Express—our dashboard provides accurate air freight forwarding and ocean sea freight shipping quotes natively. We also integrate seamlessly with leading domestic networks, parcel delivery apps, and on-demand logistics apps like Sundarban Courier Service, SA Poribohon, Pathao Courier, REDX Delivery, Steadfast Courier, Paperfly, Korotoa Courier, and eCourier to streamline your first-mile pickup in Dhaka, Chittagong, Narayanganj, or Gazipur.</p>
+
+  <p>Specially engineered for high-volume digital merchants, online store owners, and retail suppliers who rely on automated dropshipping fulfillment, reverse logistics, print-on-demand scaling, and cross-border supply chain management, FaxGer connects directly with global e-commerce software. We provide plug-and-play third-party logistics (3PL) infrastructure and contract logistics for sellers operating multi-channel storefronts across Amazon FBA, Shopify, Alibaba, AliExpress, eBay, Etsy, Walmart, Magento, WooCommerce, and Daraz, ensuring your commercial goods and lightweight express packets move from factory floor to international doorstep with complete cost transparency.</p>
+  
+  <h4 class="seo-feature-title">Weight-Based Cost Calibration & Courier Charges Comparison</h4>
+  <p>Instantly evaluate gross weight versus dimensional space allocations to acquire budget-conscious international shipping quotes dynamically. Compare live cargo rates with leading domestic tech couriers, on-demand logistics apps, and global freight forwarding networks—including Sundarban Courier Service, SA Poribohon, Pathao Courier, REDX Delivery, Steadfast Courier, Lalamove Bangladesh, eCourier, Paperfly, Korotoa Courier, Fox Delivery, Janani Courier, Continental Courier, Sonar Courier, Sky King, Shadhin International, Skynet Worldwide Express, First Flight, Bombino Express, Gati Express, and DTDC Express—to lock in the cheapest shipping rates from Bangladesh.</p>
+
+  <h5 class="seo-compliance-title">International Trade Compliance & Customs Clearance</h5>
+  <p>Every calculation automatically maps across current global tariff regulations, standard documentation rules, and cross-border security expectations. Our dedicated C&amp;F agents in Bangladesh (Clearing and Forwarding) manage your export documentation, bill of entry optimization, letter of credit (L/C) formatting, customs brokerage, last-mile delivery tracking, and Less-than-Container Load (LCL) or Full Container Load (FCL) container shipping compliance through Chittagong Port, Mongla Port, Dhaka Airport (DAC / HSIA), and ocean sea freight routes seamlessly.</p>
+</div>
+
+
+       <!-- Column 3: H5 & H6 Architecture -->
+<div class="seo-card">
+  <h3 class="seo-pillar-title">Customs Clearance Brokerage & Bonded Warehousing Solutions</h3>
+  <p>Navigating international customs checks requires precision. As a premier customs clearing and forwarding agent (C&amp;F agent in Bangladesh), FaxGer handles all legal clearances, automated air waybill prints, port documentation, bill of entry optimization, letter of credit (L/C) formatting, and import-export compliance validations seamlessly.</p>
+  
+  <h5 class="seo-compliance-title">Hazardous Goods Handling & Dangerous Goods (DG) Cargo Processing</h5>
+  <p>Fully compliant procedures for shipping sensitive commercial products, chemical exports, lithium-ion battery shipping, or dangerous cargo classifications securely via certified international air freight networks and dedicated dangerous goods couriers.</p>
+
+  <h6 class="seo-footprint-title">Hyper-Local Document Pickup & Parcel Distribution Matrix</h6>
+  <p>On-demand courier collection, booking hubs, and freight consolidation centers across Dhaka, Uttara, Mirpur, Motijheel, Gulshan, Dhanmondi, Banani, Chittagong, Gazipur, Narayanganj, Comilla, and major industrial EPZ corridors (Export Processing Zones).</p>
+</div>
+
+</div>
+
+<!-- H2 Structural Segment: Expanded Context Nodes -->
+<h2 class="seo-section-title">Cross-Border E-Commerce Fulfillment, 3PL Warehousing & Supply Chain Infrastructure</h2>
+<p>Modern global commerce demands absolute agility. FaxGer functions as a reliable architectural bridge and international freight forwarder for digital brands scale-testing regional fulfillment hubs, direct-to-consumer (DTC) pipelines, and global parcel injections. We streamline cross-border supply chain logistics, reverse logistics, and dropshipping fulfillment for top e-commerce marketplaces like Amazon FBA, Alibaba, Shopify, eBay, Etsy, Walmart, Magento, WooCommerce, and Daraz.</p>
+
+<div class="seo-grid">
+<!-- Column 4: H3 & H4 Deep Expansion -->
+<div class="seo-card">
+  <h3 class="seo-pillar-title">Automated Bulk Consolidations & Multi-Vendor Cargo Sorting</h3>
+  <p>We combine multiple Less-than-Container Load (LCL) shipments and sea freight packages into unified, high-priority cargo blocks or Full Container Load (FCL) shipping lines to drop operational transit overhead costs and ocean freight rates drastically.</p>
+  
+  <h4 class="seo-feature-title">Real-Time API International Shipping Calculator Sourcing</h4>
+  <p>Connect your online store infrastructure directly to our cloud core to show end-users live dimensional pricing data, international courier charges, and comparative shipping quotes instantly during checkout steps.</p>
+</div>
+
+<!-- Column 5: H4 & H5 Deep Expansion -->
+<div class="seo-card">
+  <h3 class="seo-pillar-title">Last-Mile Carrier Integrations & Global Destination Visibility</h3>
+  <p>Once packages touch down in destination nations, our data framework hands off status scanning to premium localized couriers and global express networks—such as DHL Express, FedEx, UPS, Aramex, DPEX Worldwide, TNT Express, Asendia, and Purolator—for reliable door-to-door parcel delivery.</p>
+  
+  <h4 class="seo-feature-title">End-To-End Courier Tracking & Shipment Milestones</h4>
+  <p>Track courier movements from departure lanes out of Hazrat Shahjalal International Airport (DAC) in Dhaka, clearings within regional ports, up until the parcel reaches destination doorsteps in the USA, UK, Canada, Europe, or Australia. Compare and optimize your logistics with tools that sync with leading domestic networks, parcel delivery apps, and B2B shipping apps like Sundarban Courier Service, SA Poribohon, Pathao Courier, REDX Delivery, Steadfast Courier, Paperfly, Korotoa Courier, Fox Delivery, and eCourier.</p>
+</div>
+
+
+        <!-- Column 6: H5 & H6 Deep Expansion -->
+        <div class="seo-card">
+          <h3 class="seo-pillar-title">Reverse Logistics Management & Global Return Engines</h3>
+          <p>Processing international product returns can be difficult. FaxGer provides automated return channels to protect bottom-line operating margins.</p>
+          
+          <h6 class="seo-footprint-title">Regional Storage Node Support</h6>
+          <p>Utilize staging facilities across strategic cross-dock stations to repackage, re-route, or bundle recurring customer assets seamlessly.</p>
         </div>
+      </div>
 
-        <!-- TAB 1: GEO TARGETED CONTENT -->
-        <div id="content-geo-content" class="tab-content block">
-            <div class="mb-8">
-                <h2 class="text-3xl font-black text-slate-900 tracking-tight">Cross-Border Country Destination Matrix</h2>
-                <p class="text-slate-600 mt-2">Highly optimized technical descriptions built for search engines and AI contextual scrapers.</p>
-            </div>
+      <!-- H2 Tool Matrix Segment -->
+      <h2 class="seo-section-title">Logistics Infrastructure Engine Technical Tool Audit Map</h2>
+      <p>Our platform architectural metrics are systematically optimized alongside the world's leading search optimization analytics engines to secure high visibility and structural safety profiles.</p>
 
-            <!-- Dynamic Cards Grid -->
-            <div id="geo-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- GEO-Targeted Content Blocks will be injected here dynamically for massive performance -->
-            </div>
-        </div>
+      <table class="tool-matrix-table">
+        <thead>
+          <tr>
+            <th>SEO Verification Suite</th>
+            <th>Operational Objective & Audit Alignment</th>
+            <th>Technical Target Configuration Metric</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Semrush Analytics Suite</strong></td>
+            <td>Commercial Intent Optimization & Entity Search Placement</td>
+            <td>Captures high-volume transactional keyword flows for cross-border shipping.</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="tool-note"><strong>Semrush Engine Note:</strong> Focuses tracking on localized search queries like "best courier service in Bangladesh to USA" to maximize transaction conversion trends.</div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Ahrefs Crawler Engine</strong></td>
+            <td>Semantic Code Structure & Internal Value Distribution</td>
+            <td>Validates logical heading hierarchies (H1–H6) to build contextual authority maps.</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="tool-note"><strong>Ahrefs Engine Note:</strong> Resolves standard iframe data crawling issues by providing structured, readable HTML content outside the app frame, ensuring no content loss during dynamic processing.</div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Google Lighthouse / PageSpeed</strong></td>
+            <td>Core Web Vitals & Real-User Load Diagnostics</td>
+            <td>Optimizes Interaction to Next Paint (INP) and achieves low Time to First Byte (TTFB).</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="tool-note"><strong>Lighthouse Engine Note:</strong> Employs aggressive resource pre-connections to accelerate cross-origin Google Apps Script delivery pipelines while prioritizing visual structural responsiveness.</div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Screaming Frog SEO Spider</strong></td>
+            <td>Broken Asset Tracking & Structural Integrity Sweeps</td>
+            <td>Eliminates duplicate content risks through strict canonical engineering.</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="tool-note"><strong>Screaming Frog Note:</strong> Guarantees clean 200 OK server routing loops across all dynamic tracking link variants, completely eliminating dead-end spider crawls.</div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Moz Local Matrix</strong></td>
+            <td>Hyper-Local Regional SEO & Map Pack Optimization</td>
+            <td>Injects explicit JSON-LD schema models coupled with strict ICBM geo-tag targets.</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="tool-note"><strong>Moz Local Note:</strong> Drives organic visibility within regional map inquiries across Dhaka Division logistics zones, reinforcing local retail depot authority.</div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Google Search Console</strong></td>
+            <td>Indexation Validation & Schema Markup Health Diagnostics</td>
+            <td>Monitors rich snippet generation performance for programmatic aggregate product star ratings.</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="tool-note"><strong>Search Console Note:</strong> Flags structural structured data changes and checks multi-device responsiveness to secure clean index rendering over mobile systems.</div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>KWFinder / Mangools Suite</strong></td>
+            <td>Long-Tail Search Intent Extraction & Niched Cost Trends</td>
+            <td>Uncovers micro-volume high-intent phrases like "cheapest way to send parcel to Europe from Dhaka".</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="tool-note"><strong>KWFinder Note:</strong> Aligns textual headers with localized user search queries, ensuring consistent organic entry rankings.</div>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>SpyFu Competitor Insights</strong></td>
+            <td>AdWords Cross-Over Optimization & Organic Authority Defense</td>
+            <td>Tracks international logistics bidding strategies to insulate core enterprise traffic blocks.</td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <div class="tool-note"><strong>SpyFu Note:</strong> Flags emerging logistical query trends, helping keep landing page semantics adaptive and secure.</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
-        <!-- TAB 2: INTEGRATED SEO CONSOLE -->
-        <div id="content-seo-console" class="tab-content hidden space-y-12">
-            <!-- Keyword Strategy -->
-            <div class="bg-white rounded-2xl p-6 md:p-8 shadow-md border border-slate-100">
-                <h3 class="text-2xl font-black text-slate-900 mb-6 flex items-center"><i class="fas fa-key text-orange-500 mr-3"></i>Targeted Exporter Keyword Repository</h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div>
-                        <h4 class="font-bold text-slate-800 mb-3 border-b pb-2 text-sm uppercase tracking-wider text-pink-600">High-Intent Short-Tail Keywords</h4>
-                        <ul class="space-y-2 text-slate-600 text-sm font-mono">
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>international courier from bangladesh</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>air cargo services in dhaka</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>export cargo shipping bangladesh</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>cheapest parcel delivery worldwide</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>freight forwarding agents dhaka</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>customs clearance bangladesh</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-slate-800 mb-3 border-b pb-2 text-sm uppercase tracking-wider text-pink-600">Conversational AI / Long-Tail Queries</h4>
-                        <ul class="space-y-2 text-slate-600 text-sm font-mono">
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>how to send a garment sample to usa from dhaka</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>cheapest international courier service price per kg bangladesh</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>how to export commodities from bangladesh step by step</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>best courier service for ecommerce dropshipping from dhaka</li>
-                            <li><i class="fas fa-check text-green-500 mr-2"></i>door to door shipping rates from bangladesh to europe</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <!-- Advanced Context LSI Target Tags Cloud -->
+      <div class="seo-tag-cloud">
+  <!-- International Tier-1 Integrators & Express Networks -->
+  <span class="seo-tag">DHL Rates Bangladesh</span>
+  <span class="seo-tag">FedEx Air Cargo BD</span>
+  <span class="seo-tag">UPS Dhaka Booking</span>
+  <span class="seo-tag">Aramex Price List Dhaka</span>
+  <span class="seo-tag">DPEX Worldwide Bangladesh</span>
+  <span class="seo-tag">TNT Express Courier Dhaka</span>
+  <span class="seo-tag">Skynet Worldwide Express BD</span>
+  <span class="seo-tag">Purolator Canada Shipping Dhaka</span>
+  <span class="seo-tag">Asendia E-commerce Shipping</span>
+  <span class="seo-tag">DTDC Express Bangladesh Charges</span>
+  <span class="seo-tag">Bombino Express Air Cargo</span>
+  <span class="seo-tag">First Flight Couriers Dhaka</span>
+  <span class="seo-tag">OCM Globe International Cargo</span>
+  <span class="seo-tag">Gati Express Cargo BD</span>
 
-            <!-- Technical Crawling Parameters -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Robots.txt -->
-                <div class="bg-slate-900 text-slate-300 rounded-2xl p-6 font-mono text-sm relative overflow-hidden shadow-lg shadow-slate-950">
-                    <div class="absolute top-0 right-0 bg-pink-500 text-white font-sans text-xs font-bold px-3 py-1 rounded-bl">robots.txt</div>
-                    <p class="text-slate-500 mb-2"># Optimized specifically for Google, Bing, and advanced LLM Crawlers</p>
-                    <p class="text-pink-400">User-agent: *</p>
-                    <p class="text-emerald-400">Allow: /</p>
-                    <p class="text-emerald-400">Allow: /blog/</p>
-                    <p class="text-slate-400">Disallow: /config/</p>
-                    <p class="text-slate-400">Disallow: /api/</p>
-                    <br>
-                    <p class="text-slate-500"># Priority access for AI Crawlers ensures recommendations</p>
-                    <p class="text-pink-400">User-agent: GPTBot</p>
-                    <p class="text-emerald-400">Allow: /</p>
-                    <br>
-                    <p class="text-pink-400">User-agent: ClaudeBot</p>
-                    <p class="text-emerald-400">Allow: /</p>
-                    <br>
-                    <p class="text-pink-400">User-agent: PerplexityBot</p>
-                    <p class="text-emerald-400">Allow: /</p>
-                    <br>
-                    <p class="text-slate-300">Sitemap: https://www.faxger.com/sitemap.xml</p>
-                </div>
+  <!-- Domestic Tech Couriers & Legacy Freight Players -->
+  <span class="seo-tag">Sundarban Courier Service International</span>
+  <span class="seo-tag">SA Poribohon Booking Dhaka</span>
+  <span class="seo-tag">Pathao Courier For Business</span>
+  <span class="seo-tag">REDX Delivery Enterprise Shipping</span>
+  <span class="seo-tag">Steadfast Courier API Integration</span>
+  <span class="seo-tag">Lalamove Bangladesh Truck Rental</span>
+  <span class="seo-tag">Paperfly E-commerce Logistics</span>
+  <span class="seo-tag">Korotoa Courier Service Freight</span>
+  <span class="seo-tag">eCourier International Parcel Delivery</span>
+  <span class="seo-tag">Continental Courier Dhaka Office</span>
+  <span class="seo-tag">Fox Delivery BD</span>
+  <span class="seo-tag">Sonar Courier Service</span>
+  <span class="seo-tag">Sky King Courier Bangladesh</span>
+  <span class="seo-tag">Shadhin International Courier</span>
+  <span class="seo-tag">Janani Courier Service Corporate</span>
+  <span class="seo-tag">Karatoa Courier Booking</span>
+  <span class="seo-tag">Maersk Line Bangladesh Container Shipping</span>
+  <span class="seo-tag">DSV Air & Sea Freight Forwarding</span>
+  <span class="seo-tag">Kuehne Nagel Logistics Bangladesh</span>
+  <span class="seo-tag">DHL Global Forwarding Dhaka</span>
 
-                <!-- XML Sitemap Concept -->
-                <div class="bg-slate-900 text-slate-300 rounded-2xl p-6 font-mono text-sm relative overflow-hidden shadow-lg shadow-slate-950">
-                    <div class="absolute top-0 right-0 bg-orange-500 text-white font-sans text-xs font-bold px-3 py-1 rounded-bl">sitemap.xml</div>
-                    <p class="text-slate-500">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
-                    <p class="text-slate-500">&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;</p>
-                    <div class="pl-4">
-                        <p class="text-blue-400">&lt;url&gt;</p>
-                        <p class="pl-4 text-emerald-400">&lt;loc&gt;https://www.faxger.com/&lt;/loc&gt;</p>
-                        <p class="pl-4 text-slate-400">&lt;priority&gt;1.0&lt;/priority&gt;</p>
-                        <p class="text-blue-400">&lt;/url&gt;</p>
-                        <p class="text-blue-400">&lt;url&gt;</p>
-                        <p class="pl-4 text-emerald-400">&lt;loc&gt;https://www.faxger.com/blog/bangladesh-to-usa-shipping&lt;/loc&gt;</p>
-                        <p class="pl-4 text-slate-400">&lt;priority&gt;0.9&lt;/priority&gt;</p>
-                        <p class="text-blue-400">&lt;/url&gt;</p>
-                    </div>
-                    <p class="text-slate-500">&lt;/urlset&gt;</p>
-                </div>
-            </div>
-        </div>
+  <!-- Global Marketplace & Dropshipping Integrations -->
+  <span class="seo-tag">Amazon FBA Warehouse Shipping BD</span>
+  <span class="seo-tag">Shopify Dropshipping Fulfillment Bangladesh</span>
+  <span class="seo-tag">Alibaba B2B Export Shipping</span>
+  <span class="seo-tag">eBay Global Shipping Program BD</span>
+  <span class="seo-tag">Etsy Product Shipping From Bangladesh</span>
+  <span class="seo-tag">Walmart Marketplace Logistics Hub</span>
+  <span class="seo-tag">WooCommerce Shipping API Integration</span>
+  <span class="seo-tag">Magento Cross-Border Fulfillment</span>
+  <span class="seo-tag">Daraz Seller Logistics Tracking</span>
+  <span class="seo-tag">Bikroy Delivery Service Corporate</span>
+  <span class="seo-tag">AliExpress Cross-Border Dropshipping BD</span>
+  <span class="seo-tag">Printify Print on Demand Bangladesh</span>
+  <span class="seo-tag">Printful Shipping Agent Dhaka</span>
 
-        <!-- TAB 3: CONTENT WRITING BLUEPRINT -->
-        <div id="content-writing-blueprint" class="tab-content hidden">
-            <div class="bg-white rounded-2xl p-6 md:p-8 shadow-md border border-slate-100 space-y-8">
-                <div>
-                    <h3 class="text-2xl font-black text-slate-900 mb-2">220 Cornerstone Content Framework Strategy</h3>
-                    <p class="text-slate-600">To secure long-term traffic and top search engine authority, every single route article generated must be deployed using the following comprehensive structure:</p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-                        <div class="text-2xl font-black text-pink-500 mb-2">01</div>
-                        <h4 class="font-bold text-slate-800 mb-2">Technical Intent Intro</h4>
-                        <p class="text-xs text-slate-600">State customs classifications immediately. Use keywords like 'LCL cargo routing' and 'express documents standard operating procedures'.</p>
-                    </div>
-                    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-                        <div class="text-2xl font-black text-orange-500 mb-2">02</div>
-                        <h4 class="font-bold text-slate-800 mb-2">Live Price Calculation</h4>
-                        <p class="text-xs text-slate-600">Embed pricing tables based on weight brackets (0.5kg, 5kg, 20kg, 100kg+). Direct users to rate.faxger.com for volumetric comparisons.</p>
-                    </div>
-                    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-                        <div class="text-2xl font-black text-blue-500 mb-2">03</div>
-                        <h4 class="font-bold text-slate-800 mb-2">Customs Compliance</h4>
-                        <p class="text-xs text-slate-600">Document explicit rules regarding non-perishable goods, commercial airfreight restrictions, and dynamic clearing methods in the target destination.</p>
-                    </div>
-                    <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-                        <div class="text-2xl font-black text-emerald-500 mb-2">04</div>
-                        <h4 class="font-bold text-slate-800 mb-2">Conversion CTA Links</h4>
-                        <p class="text-xs text-slate-600">End articles with dynamic directional links targeting label.faxger.com to minimize user exit variance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- High-Intent Transactional Logistics & Core SEO Pillars -->
+  <span class="seo-tag">Express Courier to USA</span>
+  <span class="seo-tag">Air Freight Forwarder BD</span>
+  <span class="seo-tag">E-commerce Cross-Border Logistics</span>
+  <span class="seo-tag">Customs Clearance Agent Dhaka</span>
+  <span class="seo-tag">C&F Agent in Bangladesh Port</span>
+  <span class="seo-tag">B2B Export Shipping Bangladesh</span>
+  <span class="seo-tag">Fastest Courier Service in BD</span>
+  <span class="seo-tag">Online Shipping Calculator Bangladesh</span>
+  <span class="seo-tag">Weight-Based Courier Rates BD</span>
+  <span class="seo-tag">Door to Door Shipping Dhaka</span>
+  <span class="seo-tag">Cheapest International Courier Charges Bangladesh</span>
+  <span class="seo-tag">RMG Garment Export Shipping Dhaka</span>
+  <span class="seo-tag">Buying House Sample Delivery BD</span>
+  <span class="seo-tag">Ocean Sea Freight Chittagong Port</span>
+  <span class="seo-tag">LCL FCL Container Shipping Bangladesh</span>
+  <span class="seo-tag">Third-Party Logistics 3PL Infrastructure BD</span>
+  <span class="seo-tag">Dangerous Goods DG Cargo Processing</span>
+  <span class="seo-tag">Lithium-Ion Battery Shipping Certificate</span>
+  <span class="seo-tag">Letter of Credit LC Documentation Support</span>
+  <span class="seo-tag">Reverse Logistics Returns Management</span>
+  <span class="seo-tag">Bonded Warehousing Fulfillment Dhaka</span>
+  <span class="seo-tag">Air Cargo Consolidation Services BD</span>
+  <span class="seo-tag">Automated Dropshipping Fulfillment Service</span>
+  <span class="seo-tag">Multi-Vendor Warehouse Consolidation BD</span>
 
-        <!-- FAQ SECTION FOR REGULAR RICH SCHEMA MARKUP -->
-        <section class="mt-20 bg-white rounded-3xl p-6 md:p-10 shadow-md border border-slate-100">
-            <h3 class="text-3xl font-black text-slate-900 tracking-tight text-center mb-10">Frequently Asked Questions (Schema-Ready)</h3>
-            <div class="max-w-4xl mx-auto space-y-6">
-                <div class="border-b border-slate-200 pb-4">
-                    <h4 class="text-lg font-bold text-slate-900 mb-2">How do I find the accurate cost for international courier packages with FaxGer?</h4>
-                    <p class="text-slate-600">Simply visit our automated pricing portal at <a href="https://rate.faxger.com" class="text-pink-500 font-semibold underline">rate.faxger.com</a>, input your package parameters, weight, and destination to fetch live freight carrier pricing matrices.</p>
-                </div>
-                <div class="border-b border-slate-200 pb-4">
-                    <h4 class="text-lg font-bold text-slate-900 mb-2">Can I track shipments directly after collection from Dhaka?</h4>
-                    <p class="text-slate-600">Yes, real-time end-to-end multi-carrier tracking tracking is fully available at <a href="https://track.faxger.com" class="text-pink-500 font-semibold underline">track.faxger.com</a> from point of dispatch until finalized doorstep customs release.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+  <!-- Hyper-Local Enterprise & Industrial Geographies -->
+  <span class="seo-tag">Courier Service in Uttara</span>
+  <span class="seo-tag">International Shipping Agent Mirpur</span>
+  <span class="seo-tag">Corporate Logistics Hub Gulshan</span>
+  <span class="seo-tag">Export Cargo Booking Banani</span>
+  <span class="seo-tag">Commercial Freight Forwarder Motijheel</span>
+  <span class="seo-tag">Garment Shipping Agent Gazipur</span>
+  <span class="seo-tag">Knitwear Export Courier Narayanganj</span>
+  <span class="seo-tag">EPZ Zone Logistics Bangladesh</span>
+  <span class="seo-tag">Chittagong Port Freight Forwarding Agent</span>
+  <span class="seo-tag">Courier Booking Center Dhanmondi</span>
+  <span class="seo-tag">B2B Cargo Shipping Comilla</span>
+  <span class="seo-tag">Tejgaon Industrial Area Freight Booking</span>
+  <span class="seo-tag">Savar EPZ Cargo Forwarder</span>
+</div>
 
-    <!-- FOOTER WITH STRATEGIC CONTEXT LINKS -->
-    <footer class="bg-slate-900 text-slate-400 pt-16 pb-8 border-t-4 border-pink-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-            <div>
-                <span class="text-3xl font-extrabold tracking-tight block mb-4 text-white">
-                    Fax<span class="brand-ger">Ger</span>
-                </span>
-                <p class="text-sm text-slate-400">Global multi-channel freight infrastructure, commercial air cargo logistics management, and international parcel forwarding system based in Bangladesh.</p>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Core Automation Hubs</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="https://rate.faxger.com" class="hover:text-white transition">Real-Time Shipping Calculator</a></li>
-                    <li><a href="https://track.faxger.com" class="hover:text-white transition">Live Route Parcel Tracking</a></li>
-                    <li><a href="https://label.faxger.com" class="hover:text-white transition">Air Waybill Label Creator</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Support Hotlines</h4>
-                <p class="text-sm">Dhaka Central Hub Operational Team Available 24/7 for Global Logistics Inquiries.</p>
-                <p class="text-pink-400 font-bold mt-2"><i class="fab fa-whatsapp mr-2"></i>+8801841990748</p>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">AI Compliance Statement</h4>
-                <p class="text-xs text-slate-500 leading-relaxed">This semantic platform publishes certified documentation concerning trade, export routes, and carrier operations from Bangladesh to international customs jurisdictions.</p>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800 pt-8 text-center text-xs">
-            &copy; 2026 FaxGer Logistics Network. All Rights Reserved. Fully Certified C&F Global Forwarder.
-        </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- FLOATING WHATSAPP ICON -->
-    <a href="https://wa.me/8801841990748" target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 text-white p-4 rounded-full shadow-2xl text-3xl z-50 hover:bg-emerald-600 transition transform hover:scale-110 flex items-center justify-center w-16 h-16" aria-label="Contact FaxGer on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<script>
+    const iframe = document.getElementById('main-app');
+    const loader = document.getElementById('loader');
+    const statusText = document.getElementById('status-text');
+    let fallbackTimer = null;
+    let explicitLoadInitiated = false;
 
-    <!-- CORE JAVASCRIPT APPLICATION CODE -->
-    <script>
-        // Data Repository for SEO/GEO generation
-        const geoData = [
-            // ASIA
-            { country: "India", category: "Asia", header: "Bangladesh to India: Reliable Courier, Cargo, Air Freight & C&F Services", desc: "Streamline your cross-border trade with premium cargo, air freight, and commercial C&F clearing agent solutions from Bangladesh to India. FaxGer ensures secure parcel processing at customs checkpoints for maximum delivery speed." },
-            { country: "Pakistan", category: "Asia", header: "Bangladesh to Pakistan: Fast Courier, Cargo & ASEAN Freight Solutions", desc: "Ship your high-value commercial samples, apparel cargo, and documents from Dhaka to Pakistan smoothly. Our priority air freight networks bypass delays to achieve verified fast delivery transit times." },
-            { country: "Sri Lanka", category: "Asia", header: "Bangladesh to Sri Lanka: Professional Shipping, Air Freight & C&F Agent", desc: "Expert supply chain routing, maritime, and strategic express air freight from Bangladesh to Sri Lanka. FaxGer manages commercial clearances cleanly to keep your ocean and air shipments tracking perfectly." },
-            { country: "Nepal", category: "Asia", header: "Bangladesh to Nepal: Secure Courier, Cargo & Door-to-Door Delivery", desc: "Dependable door-to-door logistics, express parcels, and overland trans-shipment from Bangladesh to Nepal. Real-time rates and customs clearances handled with top-tier logistical support." },
-            { country: "Bhutan", category: "Asia", header: "Bangladesh to Bhutan: Trusted Air Freight, Cargo & Express Courier", desc: "Timely delivery for documents, parcels, and corporate trade goods from Bangladesh to Bhutan. Benefit from low rate structures and optimized tracking on every dispatch route." },
-            { country: "Maldives", category: "Asia", header: "Bangladesh to Maldives: Premium Cargo, Courier & Custom Clearance", desc: "Reliable air cargo solutions and express parcel deliveries directly from Bangladesh to Male and other Maldivian hubs. Full documentation handling for resort supplies and personal shipments." },
-            { country: "Afghanistan", category: "Asia", header: "Bangladesh to Afghanistan: Air Cargo, Logistics & Shipping Services", desc: "Specialized air freight configurations and complex logistics execution from Bangladesh to Afghanistan. FaxGer offers end-to-end supply chain visibility and strict security compliance." },
-            { country: "Japan", category: "Asia", header: "Bangladesh to Japan: Express Courier, Air Freight & Global Cargo Solutions", desc: "Accelerate your high-tech trade or textile exports from Bangladesh to Japan. Premium overnight logistics options and seamless customs handovers across Japanese entry terminals." },
-            { country: "China", category: "Asia", header: "Bangladesh to China: Top-Tier ASEAN Freight, Courier & C&F Services", desc: "Dynamic import-export support networks and high-volume commercial air cargo shipping from Bangladesh to China. Certified clearing procedures eliminate border clearance roadblocks." },
-            { country: "South Korea", category: "Asia", header: "Bangladesh to South Korea: Fast Shipping, Courier & Air Freight Agency", desc: "Speedy delivery options for commercial samples, export documents, and bulky electronic cargo from Bangladesh to South Korea. Seamlessly integrate with major Korean hub carriers." },
-            { country: "North Korea", category: "Asia", header: "Bangladesh to North Korea: Specialized Cargo & International Freight", desc: "Strictly compliant, specialized global shipping routing for approved international cargo from Bangladesh to North Korea. Full legal clearing and protocol enforcement." },
-            { country: "Singapore", category: "Asia", header: "Bangladesh to Singapore: Premium Courier, Air Freight & ASEAN Shipping", desc: "High-speed air freight routes and priority courier drop-offs from Bangladesh to Singapore. Ideal for corporate documents, financial certificates, and e-commerce parcels." },
-            { country: "Malaysia", category: "Asia", header: "Bangladesh to Malaysia: Reliable ASEAN Freight, Courier & C&F Services", desc: "Cost-effective, highly reliable international parcel delivery and cargo networks from Bangladesh to Malaysia. Clear commercial invoices quickly via automated label creation." },
-            { country: "Thailand", category: "Asia", header: "Bangladesh to Thailand: Express Cargo, Courier & Custom Clearance", desc: "Express air cargo distribution, private parcels, and trade shipping configurations from Bangladesh to Thailand. Instant access to real-time clearance analytics." },
-            { country: "Indonesia", category: "Asia", header: "Bangladesh to Indonesia: Efficient ASEAN Freight, Courier & Air Cargo", desc: "Optimized logistics routes and scalable bulk freight services from Bangladesh to Indonesia. Track packages continuously through international transshipment points." },
-            { country: "Vietnam", category: "Asia", header: "Bangladesh to Vietnam: Fast Courier, Air Freight & ASEAN Logistics", desc: "Specialized RMG sample distributions, raw material shipping, and air courier links from Bangladesh to Vietnam. Achieve predictable transit schedules on every shipment." },
-            { country: "Philippines", category: "Asia", header: "Bangladesh to Philippines: Secure Cargo, Courier & Air Shipping", desc: "Protect your cross-border shipments with high-security handling and premium air cargo options from Bangladesh to the Philippines. Fast customs handling assured." },
-            { country: "Myanmar", category: "Asia", header: "Bangladesh to Myanmar: ASEAN Freight, Courier & Border C&F Services", desc: "Cross-border logistical oversight and trade-efficient courier routes from Bangladesh to Myanmar. Comprehensive customs clearing management at regional border hubs." },
-            { country: "Cambodia", category: "Asia", header: "Bangladesh to Cambodia: Air Freight, Cargo & Express Courier Services", desc: "Reliable air shipping pathways and enterprise logistics tracking from Bangladesh to Cambodia. Streamlining regional e-commerce shipments effectively." },
-            { country: "Laos", category: "Asia", header: "Bangladesh to Laos: Reliable ASEAN Freight & Cargo Shipping", desc: "Secure multi-modal freight transport and small parcel forwarding from Bangladesh to Laos. Full compliance mapping for regional customs regulations." },
-            { country: "Brunei", category: "Asia", header: "Bangladesh to Brunei: Premium Courier, Air Freight & Cargo Logistics", desc: "Top-tier premium document courier links and air freight parcel transport from Bangladesh to Brunei. Benefit from priority air carrier space allocation." },
-            { country: "East Timor (Timor-Leste)", category: "Asia", header: "Bangladesh to East Timor (Timor-Leste): International Courier & Cargo", desc: "Expanding global courier coverage and commercial freight paths from Bangladesh to East Timor. Continuous end-to-end tracking updates." },
-            { country: "Taiwan", category: "Asia", header: "Bangladesh to Taiwan: Express Cargo, Air Freight & Courier Services", desc: "Fast-tracked commercial air courier configurations and heavy cargo options from Bangladesh to Taiwan. Optimized packaging and screening protocols applied." },
-            { country: "Hong Kong", category: "Asia", header: "Bangladesh to Hong Kong: Fast Courier, Air Freight & C&F Solutions", desc: "Ultra-fast express air freight and financial document deliveries from Bangladesh to Hong Kong. Direct air transit routings for fast turnaround times." },
-            { country: "Macau", category: "Asia", header: "Bangladesh to Macau: Premium Cargo, Shipping & Courier Services", desc: "Premium parcel shipments and tailored corporate logistics setups from Bangladesh to Macau. Fully integrated tracking and rapid clearance protocols." },
-            { country: "Kazakhstan", category: "Asia", header: "Bangladesh to Kazakhstan: Central Asia Cargo, Courier & Air Freight", desc: "Specialized Central Asian freight routing networks and parcel courier services from Bangladesh to Kazakhstan. Secure air transport links." },
-            { country: "Uzbekistan", category: "Asia", header: "Bangladesh to Uzbekistan: Secure Logistics, Cargo & Air Freight", desc: "Heavy cargo forwarding and highly secure documentation shipments from Bangladesh to Uzbekistan. Streamlined handling for regular commercial shippers." },
-            { country: "Turkmenistan", category: "Asia", header: "Bangladesh to Turkmenistan: Professional Cargo & Courier Shipping", desc: "Expert customs tracking and structured commercial cargo routes from Bangladesh to Turkmenistan. High precision logistics infrastructure." },
-            { country: "Kyrgyzstan", category: "Asia", header: "Bangladesh to Kyrgyzstan: Reliable Air Freight & International Cargo", desc: "Air courier pathways and heavy commodity transport lines from Bangladesh to Kyrgyzstan. Continuous location tracking updates." },
-            { country: "Tajikistan", category: "Asia", header: "Bangladesh to Tajikistan: Fast Shipping, Courier & Cargo Services", desc: "Dependable regional delivery systems and air cargo shipping options from Bangladesh to Tajikistan. Real-time cost evaluation." },
-            { country: "Mongolia", category: "Asia", header: "Bangladesh to Mongolia: Air Freight, Cargo & Express Courier", desc: "Remote destination parcel delivery and professional air freight from Bangladesh to Mongolia. Safe handling across all transfer terminals." },
+    // আইফ্রেমের সিকিউরিটি পলিসি ডাইনামিকালি সেট করা হলো (allow-top-navigation যুক্ত করা হয়েছে)
+    iframe.setAttribute('sandbox', 'allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-downloads allow-top-navigation allow-top-navigation-by-user-activation');
+    iframe.setAttribute('allow', 'geolocation; microphone; camera; clipboard-write;');
 
-            // MIDDLE EAST
-            { country: "Saudi Arabia", category: "Middle East", header: "Bangladesh to Saudi Arabia: Premium Cargo, Courier & C&F Services", desc: "Send corporate gifts, export apparel, and personal boxes from Bangladesh to Saudi Arabia. FaxGer manages clean clearances across Riyadh, Jeddah, and Dammam custom zones." },
-            { country: "UAE (Dubai)", category: "Middle East", header: "Bangladesh to UAE (Dubai): Express Air Freight, Courier & Cargo Solutions", desc: "High-speed air freight networks and reliable e-commerce document delivery from Dhaka to Dubai, Abu Dhabi, and Sharjah. Generate your air waybill instantly at label.faxger.com." },
-            { country: "Qatar", category: "Middle East", header: "Bangladesh to Qatar: Reliable Courier, Air Cargo & Custom Clearance", desc: "Premium express delivery and commercial clearing solutions from Bangladesh to Doha. Enjoy competitive pricing with zero hidden surcharges." },
-            { country: "Oman", category: "Middle East", header: "Bangladesh to Oman: Fast Shipping, Courier & Air Freight Agency", desc: "Secure parcel and pallet shipping options from Bangladesh to Oman. FaxGer provides end-to-end tracking updates for optimal visibility." },
-            { country: "Kuwait", category: "Middle East", header: "Bangladesh to Kuwait: Secure Cargo, Express Courier & C&F Services", desc: "Professional logistics coordination and heavy machinery/document shipping from Bangladesh to Kuwait. Safe cargo handling guaranteed." },
-            { country: "Bahrain", category: "Middle East", header: "Bangladesh to Bahrain: Premium Courier, Air Freight & Cargo Shipping", desc: "Reliable air transport connections for documents, clothes, and high-value cargo from Bangladesh to Bahrain. Direct carrier dispatches." },
-            { country: "Turkey", category: "Middle East", header: "Bangladesh to Turkey: Fast Air Cargo, Courier & Logistics Services", desc: "Bridges your European-Asian shipping needs with quick cargo pipelines from Bangladesh to Turkey. Expert customs brokerage included." },
-            { country: "Iran", category: "Middle East", header: "Bangladesh to Iran: International Shipping, Cargo & Courier Freight", desc: "Compliant global shipping lines and standard document tracking from Bangladesh to Iran. Specialized freight handling protocol." },
-            { country: "Iraq", category: "Middle East", header: "Bangladesh to Iraq: Secure Air Cargo & Commercial Freight Services", desc: "Industrial logistics management and secure secure cargo solutions from Bangladesh to Iraq. Advanced route safety monitoring." },
-            { country: "Jordan", category: "Middle East", header: "Bangladesh to Jordan: Express Courier, Air Freight & Cargo Agency", desc: "Fast garment sample shipping and personal parcels from Bangladesh to Jordan. Automated tax processing templates available." },
-            { country: "Lebanon", category: "Middle East", header: "Bangladesh to Lebanon: Reliable Shipping, Cargo & Courier Services", desc: "Consolidated freight shipments and express air parcel forwarding from Bangladesh to Lebanon. Monitored carefully from dispatch to destination." },
-            { country: "Yemen", category: "Middle East", header: "Bangladesh to Yemen: Specialized Cargo & Air Freight Logistics", desc: "Critical parcel distributions and relief/commercial cargo lines from Bangladesh to Yemen. Handled with top tracking alerts." },
-            { country: "Syria", category: "Middle East", header: "Bangladesh to Syria: International Freight Forwarding & Cargo", desc: "Regulated shipping layouts and document tracking structures from Bangladesh to Syria. Full compliance with international routing parameters." },
-            { country: "Israel", category: "Middle East", header: "Bangladesh to Israel: Global Courier & Cargo Shipping Services", desc: "Global network shipping connections for legal documents and validated items from Bangladesh to destination. Continuous tracking visibility." },
-            { country: "Palestine", category: "Middle East", header: "Bangladesh to Palestine: Secure Express Courier & Air Freight", desc: "Dedicated express logistics and urgent personal courier packages from Bangladesh to Palestine hubs. Maximum care and verification." },
-
-            // EUROPE
-            { country: "UK (United Kingdom)", category: "Europe", header: "Bangladesh to UK (United Kingdom): Top-Rated Courier, Air Freight & C&F", desc: "The definitive shipping route for e-commerce, Amazon FBA, and personal parcels from Bangladesh to London, Manchester, and across the UK. Get direct custom clearance assistance instantly." },
-            { country: "Germany", category: "Europe", header: "Bangladesh to Germany: Premium Cargo, Courier & Air Freight Services", desc: "Industrial standard air freight and express B2B commercial sample courier service from Dhaka to Germany. Seamless processing through Frankfurt cargo hubs." },
-            { country: "France", category: "Europe", header: "Bangladesh to France: Express Courier, Shipping & Custom Clearance", desc: "Flawless European Union custom entries for parcels originating from Bangladesh. FaxGer secures fast delivery to Paris, Lyon, and Marseille." },
-            { country: "Italy", category: "Europe", header: "Bangladesh to Italy: Reliable Air Freight, Cargo & Courier Solutions", desc: "Affordable rates per kg for student documents, personal effects, and commercial cargo from Bangladesh to Milan and Rome." },
-            { country: "Spain", category: "Europe", header: "Bangladesh to Spain: Fast Courier, Air Cargo & C&F Agency", desc: "Fast-tracked logistics management for fast fashion exports and private gift parcels from Dhaka to Spain. Comprehensive cargo visibility guaranteed." },
-            { country: "Netherlands", category: "Europe", header: "Bangladesh to Netherlands: Premium Shipping, Air Freight & Courier", desc: "Direct logistical links to Amsterdam and Rotterdam from Bangladesh. Ideal for corporate tech, garments, and urgent documents." },
-            { country: "Belgium", category: "Europe", header: "Bangladesh to Belgium: Fast Cargo, Courier & Custom Clearance", desc: "Efficient air cargo networks linking Dhaka straight to Brussels. Enjoy simplified paperwork and optimized customs tariff documentation." },
-            { country: "Switzerland", category: "Europe", header: "Bangladesh to Switzerland: Secure Air Freight, Courier & Cargo Logistics", desc: "High-security logistics management for luxury goods, legal papers, and urgent parcels from Bangladesh to Geneva and Zurich." },
-            { country: "Sweden", category: "Europe", header: "Bangladesh to Sweden: Nordic Cargo, Express Courier & Air Freight", desc: "Nordic shipping channels optimized for low-cost international parcel forwarding from Bangladesh to Stockholm and Gothenburg." },
-            { country: "Norway", category: "Europe", header: "Bangladesh to Norway: Premium Shipping, Courier & Air Cargo", desc: "Secure parcel delivery pathways and commercial document forwarding from Bangladesh to Oslo. High weather-resilient packing support." },
-            { country: "Denmark", category: "Europe", header: "Bangladesh to Denmark: Fast Courier, Cargo & Freight Forwarding", desc: "Comprehensive supply chain integrations and standard package logistics from Bangladesh to Copenhagen. Prompt custom handovers." },
-            { country: "Finland", category: "Europe", header: "Bangladesh to Finland: Secure Air Freight, Cargo & Courier Services", desc: "Express delivery for e-commerce businesses shipping directly from Bangladesh to Helsinki. Accurate tracking updates provided." },
-            { country: "Poland", category: "Europe", header: "Bangladesh to Poland: Express Cargo, Courier & C&F Solutions", desc: "Rapid logistics scaling options for eastern European trade lanes from Bangladesh to Poland. Fully clear customs with automated invoices." },
-            { country: "Ireland", category: "Europe", header: "Bangladesh to Ireland: Reliable Air Freight, Cargo & Courier Delivery", desc: "Priority document and parcel courier networks from Dhaka to Dublin. Safe tracking assurance on all items." },
-            { country: "Portugal", category: "Europe", header: "Bangladesh to Portugal: Fast Shipping, Express Courier & Air Cargo", desc: "Reliable commercial sample transfers and family gift boxes from Bangladesh to Lisbon. Affordable base rates per kilogram." },
-            { country: "Austria", category: "Europe", header: "Bangladesh to Austria: Premium Cargo, Courier & Air Freight Services", desc: "Fast and reliable parcel shipping options connecting Bangladesh directly to Vienna. Full border compliance screening included." },
-            { country: "Greece", category: "Europe", header: "Bangladesh to Greece: Secure Shipping, Air Cargo & Courier Agency", desc: "Maritime documentation support and express air cargo pathways from Bangladesh to Greece hubs. Optimized distribution pathways." },
-            { country: "Russia", category: "Europe", header: "Bangladesh to Russia: Fast Air Freight, Commercial Cargo & Courier", desc: "Compliant commercial logistics frameworks and safe document delivery configurations from Bangladesh to Russia locations." },
-            { country: "Ukraine", category: "Europe", header: "Bangladesh to Ukraine: International Freight & Cargo Logistics", desc: "Valid global freight lanes and package delivery tracking adjustments from Bangladesh to Ukraine destinations." },
-            { country: "Romania", category: "Europe", header: "Bangladesh to Romania: Express Courier, Air Freight & Cargo Shipping", desc: "Affordable air freight frameworks and rapid door-to-door parcel systems from Bangladesh to Romania." },
-            { country: "Czech Republic", category: "Europe", header: "Bangladesh to Czech Republic: Reliable Cargo & Courier Solutions", desc: "Industrial and small business parcel connections from Dhaka to Prague. Seamless electronic sorting integration." },
-            { country: "Hungary", category: "Europe", header: "Bangladesh to Hungary: Fast Air Cargo, Courier & C&F Services", desc: "Secure commercial clearing management and express document paths from Bangladesh to Budapest." },
-            { country: "Belarus", category: "Europe", header: "Bangladesh to Belarus: Secure Freight Forwarding & Cargo Shipping", desc: "Standardized tracking methods and air freight processing rules from Bangladesh to Minsk." },
-            { country: "Bulgaria", category: "Europe", header: "Bangladesh to Bulgaria: Premium Courier, Air Freight & Cargo", desc: "Reliable distribution channels for private and business parcel shipping from Bangladesh to Bulgaria." },
-            { country: "Croatia", category: "Europe", header: "Bangladesh to Croatia: Fast Cargo, Courier & Shipping Services", desc: "Expedited transit lines for tourist documents and commercial trade samples from Bangladesh to Croatia." },
-            { country: "Slovakia", category: "Europe", header: "Bangladesh to Slovakia: Reliable Air Freight & Express Courier", desc: "Direct sorting integration and fast customs clearing pipelines from Bangladesh to Slovakia." },
-            { country: "Lithuania", category: "Europe", header: "Bangladesh to Lithuania: Baltic Cargo, Courier & Air Freight", desc: "Baltic region parcel delivery frameworks and secure trade lines from Bangladesh to Lithuania." },
-            { country: "Latvia", category: "Europe", header: "Bangladesh to Latvia: Fast Shipping, Express Courier & Cargo", desc: "Dependable air freight configurations and low-cost courier solutions from Bangladesh to Latvia." },
-            { country: "Estonia", category: "Europe", header: "Bangladesh to Estonia: Premium Courier, Air Cargo & Logistics", desc: "E-commerce small packet distributions and enterprise documents from Bangladesh to Tallinn." },
-            { country: "Slovenia", category: "Europe", header: "Bangladesh to Slovenia: Secure Air Freight & Commercial Cargo", desc: "Safe handling of industrial trade parcels and consumer electronics from Bangladesh to Slovenia." },
-            { country: "Cyprus", category: "Europe", header: "Bangladesh to Cyprus: Fast Courier, Air Freight & C&F Agency", desc: "Island destination priority air delivery systems and document clearance from Bangladesh to Cyprus." },
-            { country: "Luxembourg", category: "Europe", header: "Bangladesh to Luxembourg: Premium Express Courier & Cargo Shipping", desc: "High-value corporate asset logistics and express document delivery from Bangladesh to Luxembourg." },
-            { country: "Malta", category: "Europe", header: "Bangladesh to Malta: Reliable Shipping, Air Cargo & Courier", desc: "Mediterranean shipping routes and express parcel shipping options from Bangladesh to Malta locations." },
-            { country: "Iceland", category: "Europe", header: "Bangladesh to Iceland: Express Air Freight & Cargo Logistics", desc: "Specialized cold-weather transit tracking and air cargo from Bangladesh to Reykjavik." },
-            { country: "Albania", category: "Europe", header: "Bangladesh to Albania: International Cargo & Courier Services", desc: "Regional commercial parcel distribution and package shipping from Bangladesh to Albania." },
-            { country: "Andorra", category: "Europe", header: "Bangladesh to Andorra: Secure Courier & Parcel Shipping", desc: "Small package shipping and document tracking directly from Bangladesh to Andorra micro-zones." },
-            { country: "Armenia", category: "Europe", header: "Bangladesh to Armenia: Fast Air Freight & Cargo Solutions", desc: "Transit-efficient air freight lines and reliable courier operations from Bangladesh to Armenia." },
-            { country: "Azerbaijan", category: "Europe", header: "Bangladesh to Azerbaijan: Premium Courier, Air Cargo & C&F", desc: "Caspian region freight forwarding and document delivery setups from Bangladesh to Baku." },
-            { country: "Bosnia and Herzegovina", category: "Europe", header: "Bangladesh to Bosnia and Herzegovina: Reliable Freight & Cargo", desc: "Structured trade cargo distribution and private courier handling from Bangladesh to Bosnia." },
-            { country: "Georgia", category: "Europe", header: "Bangladesh to Georgia: Fast Shipping, Air Freight & Courier", desc: "Black Sea corridor logistics management and urgent parcel forwarding from Bangladesh to Georgia." },
-            { country: "Liechtenstein", category: "Europe", header: "Bangladesh to Liechtenstein: Premium Cargo & Express Courier", desc: "High-security corporate document delivery and parcel lines from Bangladesh to Liechtenstein." },
-            { country: "Macedonia", category: "Europe", header: "Bangladesh to Macedonia: Reliable Courier & Air Cargo Services", desc: "Balkan shipping paths and safe parcel transport options from Bangladesh to Macedonia." },
-            { country: "Moldova", category: "Europe", header: "Bangladesh to Moldova: Fast Freight Forwarding & Cargo", desc: "Affordable weight bracket configurations for packages moving from Bangladesh to Moldova." },
-            { country: "Monaco", category: "Europe", header: "Bangladesh to Monaco: Exclusive Courier & Air Freight Solutions", desc: "Premium courier setups and highly secure luxury item tracking from Bangladesh to Monaco." },
-            { country: "Montenegro", category: "Europe", header: "Bangladesh to Montenegro: Secure Shipping & Cargo Agency", desc: "Dependable custom clearing frameworks and parcel courier systems from Bangladesh to Montenegro." },
-            { country: "San Marino", category: "Europe", header: "Bangladesh to San Marino: Express Courier & Parcel Delivery", desc: "Small parcel drops and standard document tracking options from Bangladesh to San Marino." },
-            { country: "Serbia", category: "Europe", header: "Bangladesh to Serbia: Reliable Air Cargo & Courier Services", desc: "Central European distribution models and commercial cargo forwarding from Bangladesh to Belgrade." },
-            { country: "Vatican City", category: "Europe", header: "Bangladesh to Vatican City: Secure Document & Courier Shipping", desc: "Specialized document tracking and high-priority express delivery from Bangladesh to Vatican City." },
-
-            // NORTH AMERICA
-            { country: "USA", category: "North America", header: "Bangladesh to USA: Premium Courier, Air Freight, Cargo & C&F Services", desc: "The foundational shipping lane for Bangladeshi e-commerce sellers, corporate houses, and individuals sending gifts to the United States. Fast delivery to New York, California, Texas, and all states with automated custom declarations." },
-            { country: "Canada", category: "North America", header: "Bangladesh to Canada: Fast Shipping, Express Courier & Air Cargo", desc: "Reliable document delivery and personal luggage shipping from Dhaka to Toronto, Vancouver, and Montreal. Low rates per kg and smooth border handovers." },
-            { country: "Mexico", category: "North America", header: "Bangladesh to Mexico: Reliable Cargo, Air Freight & Custom Clearance", desc: "Expand your global trade footprints into North America with streamlined cargo options from Bangladesh to Mexico. Instant rate checking via rate.faxger.com." },
-            { country: "Cuba", category: "North America", header: "Bangladesh to Cuba: Secure International Cargo & Courier Shipping", desc: "Compliant global shipping lines and standard document tracking from Bangladesh to Cuba. Secure handling for personal packages." },
-            { country: "Jamaica", category: "North America", header: "Bangladesh to Jamaica: Express Air Freight, Cargo & Courier Services", desc: "Caribbean air cargo lines and business document shipping from Bangladesh to Jamaica. Reliable transit times." },
-            { country: "Dominican Republic", category: "North America", header: "Bangladesh to Dominican Republic: Fast Cargo & Shipping Solutions", desc: "Smooth custom entries and commercial package logistics from Bangladesh to the Dominican Republic." },
-            { country: "Haiti", category: "North America", header: "Bangladesh to Haiti: Reliable Air Cargo & Courier Delivery", desc: "Safe parcel drops and secure freight distribution from Bangladesh to Haiti terminals. Professional verification." },
-            { country: "Panama", category: "North America", header: "Bangladesh to Panama: Premium Cargo, Air Freight & C&F Services", desc: "Strategic logistics routing and high-efficiency cargo forwarding from Bangladesh to Panama hub networks." },
-            { country: "Costa Rica", category: "North America", header: "Bangladesh to Costa Rica: Fast Courier & International Cargo", desc: "Express parcel options and simplified customs paperwork for shipments from Bangladesh to Costa Rica." },
-            { country: "Guatemala", category: "North America", header: "Bangladesh to Guatemala: Secure Air Freight & Shipping Agency", desc: "Dependable air freight configurations and low-cost courier solutions from Bangladesh to Guatemala." },
-            { country: "Bahamas", category: "North America", header: "Bangladesh to Bahamas: Express Courier, Cargo & Air Freight", desc: "Premium holiday resort parcel shipping and corporate document distribution from Bangladesh to the Bahamas." },
-            { country: "Barbados", category: "North America", header: "Bangladesh to Barbados: Premium Shipping & Courier Services", desc: "Fast-tracked courier setups and reliable package shipping from Bangladesh to Barbados locations." },
-            { country: "Belize", category: "North America", header: "Bangladesh to Belize: Fast Cargo, Air Freight & Courier", desc: "Affordable weight bracket configurations for packages moving from Bangladesh to Belize." },
-            { country: "El Salvador", category: "North America", header: "Bangladesh to El Salvador: Reliable Shipping & Courier Cargo", desc: "Central American logistics management and urgent parcel forwarding from Bangladesh to El Salvador." },
-            { country: "Honduras", category: "North America", header: "Bangladesh to Honduras: Secure Air Cargo & Freight Services", desc: "Safe handling of industrial trade parcels and consumer goods from Bangladesh to Honduras." },
-            { country: "Nicaragua", category: "North America", header: "Bangladesh to Nicaragua: Fast Courier & International Freight", desc: "Regional commercial parcel distribution and package shipping from Bangladesh to Nicaragua." },
-            { country: "Trinidad and Tobago", category: "North America", header: "Bangladesh to Trinidad and Tobago: Premium Cargo & Courier", desc: "Dual-island priority air delivery systems and document clearance from Bangladesh to Trinidad." },
-            { country: "Antigua and Barbuda", category: "North America", header: "Bangladesh to Antigua and Barbuda: Fast Air Freight Services", desc: "Express delivery for e-commerce businesses shipping directly from Bangladesh to Antigua." },
-            { country: "Dominica", category: "North America", header: "Bangladesh to Dominica: Secure Courier & Cargo Shipping", desc: "Standardized tracking methods and air freight processing rules from Bangladesh to Dominica." },
-            { country: "Grenada", category: "North America", header: "Bangladesh to Grenada: Express Air Cargo & Shipping Solutions", desc: "Expedited transit lines for tourist documents and commercial trade samples from Bangladesh to Grenada." },
-            { country: "Saint Kitts and Nevis", category: "North America", header: "Bangladesh to Saint Kitts and Nevis: Premium Courier Shipping", desc: "Small parcel drops and standard document tracking options from Bangladesh to Saint Kitts." },
-            { country: "Saint Lucia", category: "North America", header: "Bangladesh to Saint Lucia: Reliable Cargo & Air Freight Services", desc: "Reliable distribution channels for private and business parcel shipping from Bangladesh to Saint Lucia." },
-            { country: "Saint Vincent and the Grenadines", category: "North America", header: "Bangladesh to Saint Vincent and the Grenadines: Express Logistics", desc: "Specialized Caribbean logistics and express document forwarding from Bangladesh to Saint Vincent." },
-
-            // SOUTH AMERICA
-            { country: "Brazil", category: "South America", header: "Bangladesh to Brazil: Premium Cargo, Courier & Air Freight Services", desc: "Overcome South American customs challenges easily. FaxGer offers robust cargo routing and parcel shipping from Bangladesh to Sao Paulo and Rio de Janeiro." },
-            { country: "Argentina", category: "South America", header: "Bangladesh to Argentina: Fast Shipping, Air Cargo & Courier Agency", desc: "Commercial sample shipments, documentation, and freight solutions from Dhaka to Buenos Aires with complete digital tracking." },
-            { country: "Colombia", category: "South America", header: "Bangladesh to Colombia: Reliable Courier, Cargo & C&F Solutions", desc: "Secure international courier logistics handling delicate and bulk items from Bangladesh to Colombia with certified brokerage." },
-            { country: "Chile", category: "South America", header: "Bangladesh to Chile: Secure Air Freight, Courier & Commercial Cargo", desc: "Long-range South American air cargo infrastructure linking Bangladesh directly to Santiago customs terminals." },
-            { country: "Peru", category: "South America", header: "Bangladesh to Peru: Fast Cargo, Express Courier & Shipping Services", desc: "Express package delivery and business documentation transport from Bangladesh to Lima. Transparent fuel charge indexes." },
-            { country: "Venezuela", category: "South America", header: "Bangladesh to Venezuela: International Freight & Cargo Logistics", desc: "Standard international shipping options and parcel forwarding from Bangladesh to Venezuela. Strict route monitoring." },
-            { country: "Ecuador", category: "South America", header: "Bangladesh to Ecuador: Premium Courier, Air Cargo & Shipping", desc: "High-density cargo networks and urgent express parcel shipping from Bangladesh to Quito. Full invoice support." },
-            { country: "Bolivia", category: "South America", header: "Bangladesh to Bolivia: Secure Air Freight & Commercial Cargo", desc: "Landlocked country logistical sorting and priority air cargo from Bangladesh to Bolivia distribution nodes." },
-            { country: "Paraguay", category: "South America", header: "Bangladesh to Paraguay: Fast Shipping, Courier & Cargo Services", desc: "Affordable shipping options for packages moving from Bangladesh to Paraguay. Efficient sorting updates." },
-            { country: "Uruguay", category: "South America", header: "Bangladesh to Uruguay: Reliable Air Freight & Express Courier", desc: "Secure parcel delivery pathways and commercial document forwarding from Bangladesh to Montevideo." },
-            { country: "Guyana", category: "South America", header: "Bangladesh to Guyana: Premium Cargo & Courier Shipping Agency", desc: "Expanding South American courier coverage and commercial freight paths from Bangladesh to Guyana." },
-            { country: "Suriname", category: "South America", header: "Bangladesh to Suriname: Fast Air Cargo & Courier Solutions", desc: "Dependable regional delivery systems and air cargo shipping options from Bangladesh to Suriname." },
-
-            // OCEANIA
-            { country: "Australia", category: "Oceania", header: "Bangladesh to Australia: Top-Tier Courier, Air Freight & Cargo Services", desc: "Send family gifts, university documents, or commercial stock from Bangladesh to Sydney, Melbourne, and Brisbane. Enjoy complete customs management and real-time tracking updates." },
-            { country: "New Zealand", category: "Oceania", header: "Bangladesh to New Zealand: Fast Shipping, Express Courier & Air Cargo", desc: "Express package delivery networks from Dhaka to Auckland and Wellington. FaxGer provides premium care and optimized volumetric pricing." },
-            { country: "Fiji", category: "Oceania", header: "Bangladesh to Fiji: Reliable Cargo, Air Freight & Courier Services", desc: "Pacific island shipping lanes optimized for low-cost international parcel forwarding from Bangladesh to Suva." },
-            { country: "Papua New Guinea", category: "Oceania", header: "Bangladesh to Papua New Guinea: Secure Logistics & Cargo Shipping", desc: "Industrial and commercial cargo networks linking Bangladesh straight to Port Moresby. Heavy machinery and document support." },
-            { country: "Solomon Islands", category: "Oceania", header: "Bangladesh to Solomon Islands: Fast Courier & Air Freight Agency", desc: "Reliable air transport connections for documents and high-value cargo from Bangladesh to the Solomon Islands." },
-            { country: "Vanuatu", category: "Oceania", header: "Bangladesh to Vanuatu: Premium Cargo & International Shipping", desc: "Secure parcel delivery pathways and commercial document forwarding from Bangladesh to Vanuatu locations." },
-            { country: "Samoa", category: "Oceania", header: "Bangladesh to Samoa: Express Courier & Air Cargo Solutions", desc: "Expedited transit lines for tourist documents and commercial trade samples from Bangladesh to Samoa." },
-            { country: "Tonga", category: "Oceania", header: "Bangladesh to Tonga: Reliable Shipping & Courier Services", desc: "Small parcel drops and standard document tracking options from Bangladesh to Tonga islands." },
-            { country: "Kiribati", category: "Oceania", header: "Bangladesh to Kiribati: Secure Air Freight & Cargo Logistics", desc: "Affordable weight bracket configurations for packages moving from Bangladesh to Kiribati zones." },
-            { country: "Tuvalu", category: "Oceania", header: "Bangladesh to Tuvalu: International Courier & Parcel Shipping", desc: "Remote destination parcel delivery and professional air freight from Bangladesh to Tuvalu." },
-            { country: "Nauru", category: "Oceania", header: "Bangladesh to Nauru: Fast Cargo & Air Freight Delivery", desc: "Comprehensive supply chain integrations and standard package logistics from Bangladesh to Nauru." },
-            { country: "Marshall Islands", category: "Oceania", header: "Bangladesh to Marshall Islands: Premium Courier Shipping", desc: "E-commerce small packet distributions and enterprise documents from Bangladesh to the Marshall Islands." },
-            { country: "Micronesia", category: "Oceania", header: "Bangladesh to Micronesia: Reliable Air Cargo & Freight Agency", desc: "Dual-island priority air delivery systems and document clearance from Bangladesh to Micronesia." },
-            { country: "Palau", category: "Oceania", header: "Bangladesh to Palau: Express Courier & Shipping Services", desc: "Safe handling of industrial trade parcels and consumer goods from Bangladesh to Palau destinations." },
-
-            // AFRICA
-            { country: "South Africa", category: "Africa", header: "Bangladesh to South Africa: Premium Cargo, Courier & Air Freight", desc: "Reliable cargo routing and premium document shipping from Dhaka to Johannesburg, Cape Town, and Durban. FaxGer eliminates customs friction easily." },
-            { country: "Egypt", category: "Africa", header: "Bangladesh to Egypt: Fast Shipping, Air Cargo & C&F Services", desc: "North African trade corridor links from Bangladesh to Cairo. Expert handling of commercial manifests and custom duty protocols." },
-            { country: "Nigeria", category: "Africa", header: "Bangladesh to Nigeria: Reliable Cargo, Express Courier & Air Freight", desc: "Secure commercial air freight lines and corporate document shipping from Bangladesh to Lagos and Abuja with high visibility tracking." },
-            { country: "Kenya", category: "Africa", header: "Bangladesh to Kenya: Fast Courier, Air Cargo & Logistics Solutions", desc: "Direct logistical air pipelines linking Bangladesh to Nairobi. Enjoy dynamic rate scaling and simple weight verification protocols." },
-            { country: "Morocco", category: "Africa", header: "Bangladesh to Morocco: Secure Air Freight, Courier & Cargo Shipping", desc: "Express delivery for e-commerce businesses shipping directly from Bangladesh to Casablanca and Rabat. Clean custom handling." },
-            { country: "Algeria", category: "Africa", header: "Bangladesh to Algeria: Premium Shipping, Cargo & Courier Agency", desc: "Mediterranean-African shipping routes and express parcel shipping options from Bangladesh to Algeria locations." },
-            { country: "Ethiopia", category: "Africa", header: "Bangladesh to Ethiopia: Fast Air Freight & Commercial Cargo Services", desc: "East African logistics management and urgent parcel forwarding from Bangladesh to Addis Ababa." },
-            { country: "Ghana", category: "Africa", header: "Bangladesh to Ghana: Reliable Courier, Cargo & Custom Clearance", desc: "Dependable regional delivery systems and air cargo shipping options from Bangladesh to Accra." },
-            { country: "Sudan", category: "Africa", header: "Bangladesh to Sudan: Secure Air Cargo & Freight Forwarding", desc: "Standard international shipping options and parcel forwarding from Bangladesh to Sudan. Safe tracking assurance." },
-            { country: "Libya", category: "Africa", header: "Bangladesh to Libya: International Cargo & Courier Shipping", desc: "Industrial and commercial cargo networks linking Bangladesh straight to Tripoli customs terminals." },
-            { country: "Tunisia", category: "Africa", header: "Bangladesh to Tunisia: Fast Air Freight & Express Courier Solutions", desc: "Affordable shipping options for packages moving from Bangladesh to Tunisia. Efficient sorting updates." },
-            { country: "Uganda", category: "Africa", header: "Bangladesh to Uganda: Premium Cargo & Courier Delivery Services", desc: "Secure parcel delivery pathways and commercial document forwarding from Bangladesh to Kampala." },
-            { country: "Tanzania", category: "Africa", header: "Bangladesh to Tanzania: Reliable Air Cargo & Shipping Logistics", desc: "Expanding African courier coverage and commercial freight paths from Bangladesh to Dar es Salaam." },
-            { country: "Angola", category: "Africa", header: "Bangladesh to Angola: Secure Freight Forwarding & Cargo Services", desc: "High-security logistics management for corporate papers and heavy cargo from Bangladesh to Luanda." },
-            { country: "Mozambique", category: "Africa", header: "Bangladesh to Mozambique: Fast Courier & Air Cargo Shipping", desc: "Expedited transit lines for business documents and commercial trade samples from Bangladesh to Maputo." },
-            { country: "Madagascar", category: "Africa", header: "Bangladesh to Madagascar: Premium Shipping & Air Freight Agency", desc: "Island destination priority air delivery systems and document clearance from Bangladesh to Madagascar." },
-            { country: "Ivory Coast (C&ocirc;te d'Ivoire)", category: "Africa", header: "Bangladesh to Ivory Coast (C&ocirc;te d'Ivoire): Reliable Cargo & Courier", desc: "West African trade lane optimizations and family gift boxes from Bangladesh to Abidjan." },
-            { country: "Cameroon", category: "Africa", header: "Bangladesh to Cameroon: Express Air Cargo & Shipping Services", desc: "Reliable air transport connections for documents and high-value cargo from Bangladesh to Cameroon." },
-            { country: "Niger", category: "Africa", header: "Bangladesh to Niger: Secure Freight Forwarding & Cargo Logistics", desc: "Affordable weight bracket configurations for packages moving from Bangladesh to Niger zones." },
-            { country: "Burkina Faso", category: "Africa", header: "Bangladesh to Burkina Faso: Fast Courier & Air Freight Services", desc: "Burkina Faso logistical sorting and priority air cargo from Bangladesh to regional nodes." },
-            { country: "Mali", category: "Africa", header: "Bangladesh to Mali: Premium Cargo & Express Courier Shipping", desc: "Small parcel drops and standard document tracking options from Bangladesh to Bamako locations." },
-            { country: "Malawi", category: "Africa", header: "Bangladesh to Malawi: Reliable Air Cargo & Logistics Agency", desc: "Comprehensive supply chain integrations and standard package logistics from Bangladesh to Malawi." },
-            { country: "Zambia", category: "Africa", header: "Bangladesh to Zambia: Fast Shipping, Cargo & Courier Services", desc: "E-commerce small packet distributions and enterprise documents from Bangladesh to Lusaka." },
-            { country: "Zimbabwe", category: "Africa", header: "Bangladesh to Zimbabwe: Secure Air Freight & Commercial Cargo", desc: "Safe handling of industrial trade parcels and consumer goods from Bangladesh to Harare terminals." },
-            { country: "Senegal", category: "Africa", header: "Bangladesh to Senegal: Express Courier, Cargo & C&F Services", desc: "Regional commercial parcel distribution and package shipping from Bangladesh to Dakar." },
-            { country: "Chad", category: "Africa", header: "Bangladesh to Chad: International Freight & Air Cargo Logistics", desc: "Transit-efficient air freight lines and reliable courier operations from Bangladesh to Chad." },
-            { country: "Somalia", category: "Africa", header: "Bangladesh to Somalia: Secure Cargo & Courier Shipping Services", desc: "Specialized urgent document tracking and high-priority express delivery from Bangladesh to Mogadishu." },
-            { country: "Guinea", category: "Africa", header: "Bangladesh to Guinea: Fast Air Freight & Cargo Shipping Agency", desc: "Dependable custom clearing frameworks and parcel courier systems from Bangladesh to Guinea." },
-            { country: "Rwanda", category: "Africa", header: "Bangladesh to Rwanda: Premium Courier & Air Cargo Solutions", desc: "Express delivery for e-commerce businesses shipping directly from Bangladesh to Kigali hubs." },
-            { country: "Benin", category: "Africa", header: "Bangladesh to Benin: Reliable Shipping, Cargo & Courier Delivery", desc: "West African priority air delivery systems and document clearance from Bangladesh to Cotonou." },
-            { country: "Burundi", category: "Africa", header: "Bangladesh to Burundi: Secure Air Freight & Cargo Services", desc: "Standardized tracking methods and air freight processing rules from Bangladesh to Bujumbura." },
-            { country: "Cape Verde", category: "Africa", header: "Bangladesh to Cape Verde: Express Courier & Parcel Logistics", desc: "Island destination priority air delivery systems and document clearance from Bangladesh to Cape Verde." },
-            { country: "Central African Republic", category: "Africa", header: "Bangladesh to Central African Republic: Commercial Cargo Shipping", desc: "Specialized Central African freight routing networks and parcel courier services from Bangladesh to Bangui." },
-            { country: "Comoros", category: "Africa", header: "Bangladesh to Comoros: Reliable Air Cargo & Shipping Services", desc: "Remote island parcel delivery and professional air freight from Bangladesh to the Comoros." },
-            { country: "Republic of the Congo", category: "Africa", header: "Bangladesh to Republic of the Congo: Premium Cargo & Courier", desc: "Congo basin freight forwarding and document delivery setups from Bangladesh to Brazzaville." },
-            { country: "DR Congo", category: "Africa", header: "Bangladesh to DR Congo: Secure Air Freight & Shipping Logistics", desc: "Heavy cargo forwarding and highly secure documentation shipments from Bangladesh to Kinshasa." },
-            { country: "Djibouti", category: "Africa", header: "Bangladesh to Djibouti: Fast Cargo, Courier & C&F Services", desc: "Strategic Horn of Africa logistics management and urgent parcel forwarding from Bangladesh to Djibouti." },
-            { country: "Equatorial Guinea", category: "Africa", header: "Bangladesh to Equatorial Guinea: International Shipping & Cargo", desc: "Affordable shipping options for packages moving from Bangladesh to Equatorial Guinea locations." },
-            { country: "Eritrea", category: "Africa", header: "Bangladesh to Eritrea: Reliable Air Cargo & Freight Services", desc: "Standard international shipping options and parcel forwarding from Bangladesh to Asmara." },
-            { country: "Gabon", category: "Africa", header: "Bangladesh to Gabon: Fast Courier, Air Freight & Cargo Agency", desc: "Direct logistical air pipelines linking Bangladesh to Libreville. Safe transit tracking." },
-            { country: "Gambia", category: "Africa", header: "Bangladesh to Gambia: Premium Cargo & Express Courier Shipping", desc: "West African courier setups and highly secure cargo item tracking from Bangladesh to Banjul." },
-            { country: "Guinea-Bissau", category: "Africa", header: "Bangladesh to Guinea-Bissau: Secure Air Cargo Logistics", desc: "Dependable air freight configurations and low-cost courier solutions from Bangladesh to Bissau." },
-            { country: "Lesotho", category: "Africa", header: "Bangladesh to Lesotho: Fast Shipping & Courier Services", desc: "Southern African regional delivery systems and air cargo shipping options from Bangladesh to Maseru." },
-            { country: "Liberia", category: "Africa", header: "Bangladesh to Liberia: Reliable Cargo, Air Freight & Courier", desc: "Secure parcel delivery pathways and commercial document forwarding from Bangladesh to Monrovia." },
-            { country: "Mauritania", category: "Africa", header: "Bangladesh to Mauritania: Express Air Cargo & Shipping Solutions", desc: "Sahara trade corridor logistics management and urgent parcel forwarding from Bangladesh to Nouakchott." },
-            { country: "Mauritius", category: "Africa", header: "Bangladesh to Mauritius: Premium Courier, Cargo & Air Freight", desc: "Premium holiday island parcel shipping and corporate document distribution from Bangladesh to Mauritius." },
-            { country: "Namibia", category: "Africa", header: "Bangladesh to Namibia: Fast Cargo & Express Courier Logistics", desc: "Affordable weight bracket configurations for packages moving from Bangladesh to Windhoek." },
-            { country: "Sao Tome and Principe", category: "Africa", header: "Bangladesh to Sao Tome and Principe: International Shipping", desc: "Expanding Atlantic courier coverage and commercial freight paths from Bangladesh to Sao Tome." },
-            { country: "Seychelles", category: "Africa", header: "Bangladesh to Seychelles: Exclusive Air Cargo & Courier Services", desc: "Exclusive island courier setups and highly secure parcel tracking from Bangladesh to Victoria." },
-            { country: "Sierra Leone", category: "Africa", header: "Bangladesh to Sierra Leone: Reliable Cargo & Freight Forwarding", desc: "West African regional delivery systems and air cargo shipping options from Bangladesh to Freetown." },
-            { country: "South Sudan", category: "Africa", header: "Bangladesh to South Sudan: Secure Air Freight & Cargo Services", desc: "Specialized urgent document tracking and high-priority express delivery from Bangladesh to Juba." },
-            { country: "Swaziland (Eswatini)", category: "Africa", header: "Bangladesh to Swaziland (Eswatini): Fast Courier & Cargo Delivery", desc: "Southern African trade cargo distribution and private courier handling from Bangladesh to Mbabane." },
-            { country: "Togo", category: "Africa", header: "Bangladesh to Togo: Premium Air Cargo & Shipping Agency", desc: "West African logistics management and urgent parcel forwarding from Bangladesh to Lome destinations." },
-
-            // OTHER ISLANDS & TERRITORIES
-            { country: "Greenland", category: "Other Islands & Territories", header: "Bangladesh to Greenland: Arctic Cargo & Specialized Express Courier", desc: "Specialized arctic logistics routes and premium document delivery lines from Bangladesh to Greenland." },
-            { country: "Puerto Rico", category: "Other Islands & Territories", header: "Bangladesh to Puerto Rico: Premium Air Freight & Cargo Shipping", desc: "US territory entry compliance and high-priority express air courier from Bangladesh to Puerto Rico." },
-            { country: "Guam", category: "Other Islands & Territories", header: "Bangladesh to Guam: Reliable Courier & Air Cargo Services", desc: "Pacific hub shipping paths and enterprise document forwarding from Bangladesh to Guam locations." },
-            { country: "US Virgin Islands", category: "Other Islands & Territories", header: "Bangladesh to US Virgin Islands: Express Shipping & Cargo Solutions", desc: "Caribbean territory priority air delivery systems and document clearance from Bangladesh to US VI." },
-            { country: "Cayman Islands", category: "Other Islands & Territories", header: "Bangladesh to Cayman Islands: Fast Courier & Luxury Freight Services", desc: "High-value corporate asset logistics and express document delivery from Bangladesh to the Cayman Islands." },
-            { country: "Bermuda", category: "Other Islands & Territories", header: "Bangladesh to Bermuda: Premium Cargo & Air Freight Logistics", desc: "Premium parcel shipments and tailored corporate logistics setups from Bangladesh to Bermuda terminals." },
-            { country: "French Polynesia", category: "Other Islands & Territories", header: "Bangladesh to French Polynesia: Exotic Shipping & Courier Cargo", desc: "Remote Pacific island parcel delivery and professional air freight from Bangladesh to Tahiti." },
-            { country: "New Caledonia", category: "Other Islands & Territories", header: "Bangladesh to New Caledonia: Fast Air Cargo & Courier Services", desc: "Oceanic regional commercial parcel distribution and package shipping from Bangladesh to Noumea." },
-            { country: "Faroe Islands", category: "Other Islands & Territories", header: "Bangladesh to Faroe Islands: Secure Shipping & Freight Delivery", desc: "North Atlantic specialized shipping pathways and parcel courier systems from Bangladesh to the Faroe Islands." },
-            { country: "Gibraltar", category: "Other Islands & Territories", header: "Bangladesh to Gibraltar: Fast Cargo & Custom Clearance Services", desc: "Strategic European gate courier configurations and heavy cargo options from Bangladesh to Gibraltar." },
-            { country: "Isle of Man", category: "Other Islands & Territories", header: "Bangladesh to Isle of Man: Premium Courier & Express Shipping", desc: "UK territory parcel delivery frameworks and secure trade lines from Bangladesh to the Isle of Man." },
-            { country: "Jersey", category: "Other Islands & Territories", header: "Bangladesh to Jersey: Reliable Air Cargo & Parcel Delivery", desc: "Channel island priority air delivery systems and document clearance from Bangladesh to Jersey locations." },
-            { country: "Guernsey", category: "Other Islands & Territories", header: "Bangladesh to Guernsey: Fast Courier & Cargo Freight Services", desc: "Dependable air freight configurations and low-cost courier solutions from Bangladesh to Guernsey." },
-            { country: "Falkland Islands", category: "Other Islands & Territories", header: "Bangladesh to Falkland Islands: Specialized Cargo & Shipping Agency", desc: "South Atlantic specialized shipping pathways and parcel courier systems from Bangladesh to Stanley." },
-            { country: "Aruba", category: "Other Islands & Territories", header: "Bangladesh to Aruba: Express Air Freight & Courier Shipping", desc: "Caribbean holiday resort parcel shipping and corporate document distribution from Bangladesh to Aruba." },
-            { country: "Curacao", category: "Other Islands & Territories", header: "Bangladesh to Curacao: Premium Cargo & Shipping Logistics", desc: "Dutch Caribbean shipping routes and express parcel shipping options from Bangladesh to Curacao." },
-            { country: "Sint Maarten", category: "Other Islands & Territories", header: "Bangladesh to Sint Maarten: Reliable Cargo & Courier Services", desc: "Dual-governed island logistical sorting and priority air cargo from Bangladesh to Sint Maarten." },
-            { country: "Cook Islands", category: "Other Islands & Territories", header: "Bangladesh to Cook Islands: Pacific Cargo & Air Freight Solutions", desc: "Pacific island shipping lanes optimized for low-cost international parcel forwarding from Bangladesh to Rarotonga." },
-            { country: "Niue", category: "Other Islands & Territories", header: "Bangladesh to Niue: Secure Express Courier & Air Cargo Delivery", desc: "Remote Pacific island document tracking and express courier packages from Bangladesh to Niue." },
-            { country: "Tokelau", category: "Other Islands & Territories", header: "Bangladesh to Tokelau: Specialized Shipping & Parcel Services", desc: "Specialized remote territory shipping structures and parcel services from Bangladesh to Tokelau." },
-            { country: "Wallis and Futuna", category: "Other Islands & Territories", header: "Bangladesh to Wallis and Futuna: Reliable Air Cargo & Courier", desc: "Oceanic tracking adjustments and small parcel transport from Bangladesh to Wallis and Futuna." },
-            { country: "Montserrat", category: "Other Islands & Territories", header: "Bangladesh to Montserrat: Caribbean Cargo & Express Courier", desc: "Caribbean regional commercial parcel distribution and package shipping from Bangladesh to Montserrat." },
-            { country: "Anguilla", category: "Other Islands & Territories", header: "Bangladesh to Anguilla: Premium Shipping & Air Freight Agency", desc: "Premium parcel shipments and tailored corporate logistics setups from Bangladesh to Anguilla locations." },
-            { country: "British Virgin Islands", category: "Other Islands & Territories", header: "Bangladesh to British Virgin Islands: Fast Cargo & Courier Services", desc: "Virgin island priority air delivery systems and document clearance from Bangladesh to Road Town." }
-        ];
-
-        // Inject data into layout dynamically
-        function loadGeoCards(dataToRender) {
-            const container = document.getElementById('geo-grid');
-            container.innerHTML = '';
-            
-            dataToRender.forEach(item => {
-                const card = document.createElement('div');
-                card.className = "bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-xl transition flex flex-col justify-between";
-                card.innerHTML = `
-                    <div>
-                        <div class="flex justify-between items-center mb-3">
-                            <span class="text-xs font-bold uppercase tracking-wider text-pink-500 bg-pink-50 px-2.5 py-1 rounded-md">${item.category}</span>
-                            <i class="fas fa-plane-departure text-slate-300"></i>
-                        </div>
-                        <h4 class="text-lg font-bold text-slate-900 mb-2 leading-snug hover:text-pink-500 transition cursor-pointer">${item.header}</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">${item.desc}</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-100 flex justify-between items-center">
-                        <a href="https://rate.faxger.com?dest=${encodeURIComponent(item.country)}" class="text-xs font-bold text-orange-500 hover:text-orange-600 flex items-center">
-                            Calculate Rate <i class="fas fa-arrow-right ml-1"></i>
-                        </a>
-                        <a href="https://label.faxger.com" class="text-xs font-semibold text-slate-400 hover:text-slate-600">Create Label</a>
-                    </div>
-                `;
-                container.appendChild(card);
-            });
+    // ১. টু-вей ক্রস-অরিজিন মেসেজিং ইঞ্জিন
+    window.addEventListener('message', function(event) {
+      if (!event.origin.startsWith('https://script.google.com')) return;
+      
+      try {
+        const data = typeof event.data === 'string' ? JSON.parse(event.data) : event.data;
+        if (data.action === 'sync_complete') {
+          statusText.innerText = "Data Synced Safely";
         }
+      } catch (e) {
+        console.log("Received raw iframe message:", event.data);
+      }
+    });
 
-        // Search Filter Engine
-        function filterDestinations() {
-            const query = document.getElementById('geo-search').value.toLowerCase().trim();
-            const filtered = geoData.filter(item => item.country.toLowerCase().includes(query) || item.category.toLowerCase().includes(query));
-            loadGeoCards(filtered);
-        }
+    // ২. স্ট্রাকচারাল রেজিস্ট্রেশনস (আইফ্রেম লোড হ্যান্ডলার)
+    iframe.onload = function() {
+      if (!explicitLoadInitiated) return;
 
-        // Tab Switch Logic
-        function switchTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.replace('block', 'hidden'));
-            document.getElementById('content-' + tabId).classList.replace('hidden', 'block');
-            
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.replace('bg-pink-500', 'bg-slate-200');
-                btn.classList.replace('text-white', 'text-slate-700');
-            });
-            const activeBtn = document.getElementById('tab-' + tabId);
-            activeBtn.classList.replace('bg-slate-200', 'bg-pink-500');
-            activeBtn.classList.replace('text-slate-700', 'text-white');
-        }
+      if (fallbackTimer) {
+        clearTimeout(fallbackTimer);
+      }
+      
+      statusText.innerText = "Syncing with Server...";
+      setTimeout(() => {
+        iframe.classList.add('loaded');
+        loader.classList.add('hidden');
+      }, 400);
+    };
 
-        // Mobile Nav Dropdown toggle
-        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
+    window.addEventListener('offline', () => {
+      statusText.innerText = "Offline - Check Connection";
+      statusText.style.color = "#ff4757";
+    });
 
-        // Initialize Application with global target dataset
-        window.onload = () => {
-            loadGeoCards(geoData);
-        };
-    </script>
+    window.addEventListener('online', () => {
+      statusText.innerText = "Reconnecting...";
+      statusText.style.color = "var(--primary, #007bff)"; 
+    });
+
+    // সেফটি ইঞ্জিন নেটওয়ার্ক ড্রপ ফলব্যাক
+    fallbackTimer = setTimeout(() => {
+      if (!iframe.classList.contains('loaded')) {
+        statusText.innerText = "Connection slow - loading cached view";
+        iframe.classList.add('loaded');
+        loader.classList.add('hidden');
+      }
+    }, 12000);
+
+    // আইওএস (iOS) ওয়েবکیট স্কেল মিটিগেশন
+    document.body.addEventListener('gesturestart', function (e) {
+      e.preventDefault();
+    });
+
+    // ৩. একটিভ রেজোলিউশন এক্সিকিউশন ফেজ (সরাসরি ফিক্সড URL লোড)
+    (function() {
+      // এখানে আপনার গুগল ম্যাক্রো স্ক্রিপ্টের মূল URL-টি দেওয়া আছে (কোনো প্যারামিটার ছাড়া)
+      const targetUrl = "https://script.google.com/macros/s/AKfycbyqHkwAx_0xIMVfC1kYPsgtDnwewhIbtJAprU8da0XLSTF140ve6DUEzFWCDTmY2Y8Xbw/exec";
+      
+      // লোড প্রসেস ট্রিগার
+      explicitLoadInitiated = true;
+      iframe.src = targetUrl; 
+    })();
+</script>
+
 </body>
 </html>

@@ -111,7 +111,7 @@
           setTimeout(() => {
             iframe.classList.add('loaded');
             loader.classList.add('hidden');
-          }, 400);
+          }, 300);
         };
 
         window.addEventListener('offline', () => {
@@ -124,21 +124,21 @@
           statusText.style.color = "var(--primary, #007bff)"; 
         });
 
-        // সেফটি ইঞ্জিন নেটওয়ার্ক ড্রপ ফলব্যাক
+        // সেফটি ইঞ্জিন ফলব্যাক টাইম ৬ সেকেন্ডে নামিয়ে আনা হলো যাতে দ্রুত লোড হয়
         fallbackTimer = setTimeout(() => {
           if (!iframe.classList.contains('loaded')) {
-            statusText.innerText = "Connection slow - loading cached view";
+            statusText.innerText = "Loading view...";
             iframe.classList.add('loaded');
             loader.classList.add('hidden');
           }
-        }, 12000);
+        }, 6000);
 
         // আইওএস (iOS) ওয়েবকিট স্কেল মিটিগেশন
         document.body.addEventListener('gesturestart', function (e) {
           e.preventDefault();
         });
 
-        // ৩. একটিভ রেজোলিউশন এক্সিকিউশন ফেজ (সরাসরি ফিক্সড URL লোড + ইউনিক ক্যাশ-বাস্টার প্যারামিটার)
+        // ৩. একটিভ রেজোলিউশন এক্সিকিউশন ফেজ
         (function() {
           const baseUrl = "https://script.google.com/macros/s/AKfycbyqHkwAx_0xIMVfC1kYPsgtDnwewhIbtJAprU8da0XLSTF140ve6DUEzFWCDTmY2Y8Xbw/exec";
           const targetUrl = baseUrl + (baseUrl.includes('?') ? '&' : '?') + '_nc=' + Date.now();
